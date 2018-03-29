@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzq-Wb-6eh">
+                                <rect key="frame" x="98" y="69" width="124" height="45"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FmR-oX-SE8"/>
+                                </constraints>
+                                <state key="normal" title="Block回调"/>
+                                <connections>
+                                    <action selector="block:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pld-lE-vEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrc-qK-1oE">
+                                <rect key="frame" x="98" y="169" width="124" height="54"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="dZy-by-idz"/>
+                                </constraints>
+                                <state key="normal" title="Delegate回调"/>
+                                <connections>
+                                    <action selector="delegate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="egU-My-rFq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eau-zw-lk2">
+                                <rect key="frame" x="83" y="274" width="154" height="60"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RfR-im-Q34"/>
+                                </constraints>
+                                <state key="normal" title="SEL回调"/>
+                                <connections>
+                                    <action selector="sel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kpT-zp-BYo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-8b-4Rd">
+                                <rect key="frame" x="130" y="362" width="60" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="FKT-Jq-xjT"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kaj-Rj-9cX"/>
+                                </constraints>
+                                <state key="normal" title="上传头像"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yQh-Qj-uog"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pzq-Wb-6eh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="49" id="5l2-39-4o7"/>
+                            <constraint firstAttribute="trailing" secondItem="hrc-qK-1oE" secondAttribute="trailing" constant="98" id="6rQ-Iu-SF0"/>
+                            <constraint firstItem="hrc-qK-1oE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="98" id="9a2-C4-E4q"/>
+                            <constraint firstItem="3Ai-8b-4Rd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EN5-ff-YdC"/>
+                            <constraint firstAttribute="trailing" secondItem="pzq-Wb-6eh" secondAttribute="trailing" constant="98" id="F7u-3X-soL"/>
+                            <constraint firstAttribute="trailing" secondItem="hrc-qK-1oE" secondAttribute="trailing" constant="98" id="IoZ-Mb-9Pq"/>
+                            <constraint firstAttribute="trailing" secondItem="Eau-zw-lk2" secondAttribute="trailing" constant="83" id="Zwa-Lf-AJ3"/>
+                            <constraint firstItem="hrc-qK-1oE" firstAttribute="top" secondItem="pzq-Wb-6eh" secondAttribute="bottom" constant="46" id="hF1-hN-QP7"/>
+                            <constraint firstItem="Eau-zw-lk2" firstAttribute="top" secondItem="hrc-qK-1oE" secondAttribute="bottom" constant="51" id="lhk-Td-7l4"/>
+                            <constraint firstItem="3Ai-8b-4Rd" firstAttribute="top" secondItem="Eau-zw-lk2" secondAttribute="bottom" constant="28" id="luy-Hb-lRt"/>
+                            <constraint firstItem="hrc-qK-1oE" firstAttribute="top" secondItem="pzq-Wb-6eh" secondAttribute="bottom" constant="46" id="mc7-kV-rd7"/>
+                            <constraint firstItem="Eau-zw-lk2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="83" id="mrd-pA-iHw"/>
+                            <constraint firstItem="hrc-qK-1oE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="98" id="nvV-OL-wsu"/>
+                            <constraint firstItem="pzq-Wb-6eh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="98" id="otG-iN-LgL"/>
+                            <constraint firstItem="hrc-qK-1oE" firstAttribute="top" secondItem="pzq-Wb-6eh" secondAttribute="bottom" constant="55" id="tPR-DG-pjK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6rQ-Iu-SF0"/>
+                                <exclude reference="9a2-C4-E4q"/>
+                                <exclude reference="hF1-hN-QP7"/>
+                                <exclude reference="mc7-kV-rd7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-106" y="-16"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B3EB2111DC498370080DF86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB2101DC498370080DF86 /* AppDelegate.m */; };
+		6B3EB21F1DC498410080DF86 /* PYSearch.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B3EB2131DC498410080DF86 /* PYSearch.bundle */; };
+		6B3EB2201DC498410080DF86 /* PYSearchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB2161DC498410080DF86 /* PYSearchConst.m */; };
+		6B3EB2211DC498410080DF86 /* PYSearchSuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB2181DC498410080DF86 /* PYSearchSuggestionViewController.m */; };
+		6B3EB2221DC498410080DF86 /* PYSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB21A1DC498410080DF86 /* PYSearchViewController.m */; };
+		6B3EB2231DC498410080DF86 /* UIColor+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB21C1DC498410080DF86 /* UIColor+PYSearchExtension.m */; };
+		6B3EB2241DC498410080DF86 /* UIView+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3EB21E1DC498410080DF86 /* UIView+PYSearchExtension.m */; };
+		6B8FA3851E1B781F00DFD42A /* NSBundle+PYSearchExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8FA3841E1B781F00DFD42A /* NSBundle+PYSearchExtension.m */; };
+		6B9717681DC48FA800B2DAA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9717671DC48FA800B2DAA1 /* main.m */; };
+		6B9717761DC48FA800B2DAA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B9717751DC48FA800B2DAA1 /* Assets.xcassets */; };
+		6B9717791DC48FA800B2DAA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9717771DC48FA800B2DAA1 /* LaunchScreen.storyboard */; };
+		6B9717841DC48FA800B2DAA1 /* PYSearchExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9717831DC48FA800B2DAA1 /* PYSearchExampleTests.m */; };
+		6B97178F1DC48FA800B2DAA1 /* PYSearchExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97178E1DC48FA800B2DAA1 /* PYSearchExampleUITests.m */; };
+		6B97179E1DC48FE800B2DAA1 /* PYSearchExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B97179D1DC48FE800B2DAA1 /* PYSearchExampleController.m */; };
+		6B9DA6011DC8415700D07A16 /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9DA6001DC8415700D07A16 /* PYTempViewController.m */; };
+		A6324EC11E3130FB00BAA226 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6324EC31E3130FB00BAA226 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B9717801DC48FA800B2DAA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B97175B1DC48FA700B2DAA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9717621DC48FA800B2DAA1;
+			remoteInfo = PYSearchExample;
+		};
+		6B97178B1DC48FA800B2DAA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B97175B1DC48FA700B2DAA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9717621DC48FA800B2DAA1;
+			remoteInfo = PYSearchExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B3EB20F1DC498370080DF86 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B3EB2101DC498370080DF86 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B3EB2131DC498410080DF86 /* PYSearch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYSearch.bundle; sourceTree = "<group>"; };
+		6B3EB2141DC498410080DF86 /* PYSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearch.h; sourceTree = "<group>"; };
+		6B3EB2151DC498410080DF86 /* PYSearchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchConst.h; sourceTree = "<group>"; };
+		6B3EB2161DC498410080DF86 /* PYSearchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchConst.m; sourceTree = "<group>"; };
+		6B3EB2171DC498410080DF86 /* PYSearchSuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchSuggestionViewController.h; sourceTree = "<group>"; };
+		6B3EB2181DC498410080DF86 /* PYSearchSuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchSuggestionViewController.m; sourceTree = "<group>"; };
+		6B3EB2191DC498410080DF86 /* PYSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchViewController.h; sourceTree = "<group>"; };
+		6B3EB21A1DC498410080DF86 /* PYSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchViewController.m; sourceTree = "<group>"; };
+		6B3EB21B1DC498410080DF86 /* UIColor+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PYSearchExtension.h"; sourceTree = "<group>"; };
+		6B3EB21C1DC498410080DF86 /* UIColor+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PYSearchExtension.m"; sourceTree = "<group>"; };
+		6B3EB21D1DC498410080DF86 /* UIView+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PYSearchExtension.h"; sourceTree = "<group>"; };
+		6B3EB21E1DC498410080DF86 /* UIView+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PYSearchExtension.m"; sourceTree = "<group>"; };
+		6B8FA3831E1B781F00DFD42A /* NSBundle+PYSearchExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+PYSearchExtension.h"; sourceTree = "<group>"; };
+		6B8FA3841E1B781F00DFD42A /* NSBundle+PYSearchExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+PYSearchExtension.m"; sourceTree = "<group>"; };
+		6B9717631DC48FA800B2DAA1 /* PYSearchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PYSearchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9717671DC48FA800B2DAA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B9717751DC48FA800B2DAA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B9717781DC48FA800B2DAA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B97177A1DC48FA800B2DAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B97177F1DC48FA800B2DAA1 /* PYSearchExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYSearchExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9717831DC48FA800B2DAA1 /* PYSearchExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYSearchExampleTests.m; sourceTree = "<group>"; };
+		6B9717851DC48FA800B2DAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B97178A1DC48FA800B2DAA1 /* PYSearchExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PYSearchExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B97178E1DC48FA800B2DAA1 /* PYSearchExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PYSearchExampleUITests.m; sourceTree = "<group>"; };
+		6B9717901DC48FA800B2DAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B97179C1DC48FE800B2DAA1 /* PYSearchExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSearchExampleController.h; sourceTree = "<group>"; };
+		6B97179D1DC48FE800B2DAA1 /* PYSearchExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSearchExampleController.m; sourceTree = "<group>"; };
+		6B9DA5FF1DC8415700D07A16 /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
+		6B9DA6001DC8415700D07A16 /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
+		A6324EBB1E312F1100BAA226 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A6324EBC1E312F1600BAA226 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A6324EBD1E312F1C00BAA226 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A6324EBE1E312F2000BAA226 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A6324EC21E3130FB00BAA226 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A6324EC41E3130FE00BAA226 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A6324EC51E3130FE00BAA226 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A6324EC61E3130FF00BAA226 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A6324EC71E31310000BAA226 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B9717601DC48FA800B2DAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B97177C1DC48FA800B2DAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9717871DC48FA800B2DAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B3EB2121DC498410080DF86 /* PYSearch */ = {
+			isa = PBXGroup;
+			children = (
+				6B3EB2131DC498410080DF86 /* PYSearch.bundle */,
+				6B3EB2141DC498410080DF86 /* PYSearch.h */,
+				6B3EB2151DC498410080DF86 /* PYSearchConst.h */,
+				6B3EB2161DC498410080DF86 /* PYSearchConst.m */,
+				6B3EB2171DC498410080DF86 /* PYSearchSuggestionViewController.h */,
+				6B3EB2181DC498410080DF86 /* PYSearchSuggestionViewController.m */,
+				6B3EB2191DC498410080DF86 /* PYSearchViewController.h */,
+				6B3EB21A1DC498410080DF86 /* PYSearchViewController.m */,
+				6B3EB21B1DC498410080DF86 /* UIColor+PYSearchExtension.h */,
+				6B3EB21C1DC498410080DF86 /* UIColor+PYSearchExtension.m */,
+				6B3EB21D1DC498410080DF86 /* UIView+PYSearchExtension.h */,
+				6B3EB21E1DC498410080DF86 /* UIView+PYSearchExtension.m */,
+				6B8FA3831E1B781F00DFD42A /* NSBundle+PYSearchExtension.h */,
+				6B8FA3841E1B781F00DFD42A /* NSBundle+PYSearchExtension.m */,
+			);
+			name = PYSearch;
+			path = ../../PYSearch;
+			sourceTree = "<group>";
+		};
+		6B97175A1DC48FA700B2DAA1 = {
+			isa = PBXGroup;
+			children = (
+				6B9717651DC48FA800B2DAA1 /* PYSearchExample */,
+				6B9717821DC48FA800B2DAA1 /* PYSearchExampleTests */,
+				6B97178D1DC48FA800B2DAA1 /* PYSearchExampleUITests */,
+				6B9717641DC48FA800B2DAA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B9717641DC48FA800B2DAA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B9717631DC48FA800B2DAA1 /* PYSearchExample.app */,
+				6B97177F1DC48FA800B2DAA1 /* PYSearchExampleTests.xctest */,
+				6B97178A1DC48FA800B2DAA1 /* PYSearchExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B9717651DC48FA800B2DAA1 /* PYSearchExample */ = {
+			isa = PBXGroup;
+			children = (
+				6B3EB2121DC498410080DF86 /* PYSearch */,
+				6B3EB20F1DC498370080DF86 /* AppDelegate.h */,
+				6B3EB2101DC498370080DF86 /* AppDelegate.m */,
+				6B97179C1DC48FE800B2DAA1 /* PYSearchExampleController.h */,
+				6B97179D1DC48FE800B2DAA1 /* PYSearchExampleController.m */,
+				6B9DA5FF1DC8415700D07A16 /* PYTempViewController.h */,
+				6B9DA6001DC8415700D07A16 /* PYTempViewController.m */,
+				6B9717751DC48FA800B2DAA1 /* Assets.xcassets */,
+				6B9717661DC48FA800B2DAA1 /* Supporting Files */,
+			);
+			path = PYSearchExample;
+			sourceTree = "<group>";
+		};
+		6B9717661DC48FA800B2DAA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B9717771DC48FA800B2DAA1 /* LaunchScreen.storyboard */,
+				6B97177A1DC48FA800B2DAA1 /* Info.plist */,
+				A6324EC31E3130FB00BAA226 /* Localizable.strings */,
+				6B9717671DC48FA800B2DAA1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B9717821DC48FA800B2DAA1 /* PYSearchExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B9717831DC48FA800B2DAA1 /* PYSearchExampleTests.m */,
+				6B9717851DC48FA800B2DAA1 /* Info.plist */,
+			);
+			path = PYSearchExampleTests;
+			sourceTree = "<group>";
+		};
+		6B97178D1DC48FA800B2DAA1 /* PYSearchExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B97178E1DC48FA800B2DAA1 /* PYSearchExampleUITests.m */,
+				6B9717901DC48FA800B2DAA1 /* Info.plist */,
+			);
+			path = PYSearchExampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B9717621DC48FA800B2DAA1 /* PYSearchExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9717931DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExample" */;
+			buildPhases = (
+				6B97175F1DC48FA800B2DAA1 /* Sources */,
+				6B9717601DC48FA800B2DAA1 /* Frameworks */,
+				6B9717611DC48FA800B2DAA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PYSearchExample;
+			productName = PYSearchExample;
+			productReference = 6B9717631DC48FA800B2DAA1 /* PYSearchExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B97177E1DC48FA800B2DAA1 /* PYSearchExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9717961DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExampleTests" */;
+			buildPhases = (
+				6B97177B1DC48FA800B2DAA1 /* Sources */,
+				6B97177C1DC48FA800B2DAA1 /* Frameworks */,
+				6B97177D1DC48FA800B2DAA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B9717811DC48FA800B2DAA1 /* PBXTargetDependency */,
+			);
+			name = PYSearchExampleTests;
+			productName = PYSearchExampleTests;
+			productReference = 6B97177F1DC48FA800B2DAA1 /* PYSearchExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B9717891DC48FA800B2DAA1 /* PYSearchExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9717991DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExampleUITests" */;
+			buildPhases = (
+				6B9717861DC48FA800B2DAA1 /* Sources */,
+				6B9717871DC48FA800B2DAA1 /* Frameworks */,
+				6B9717881DC48FA800B2DAA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B97178C1DC48FA800B2DAA1 /* PBXTargetDependency */,
+			);
+			name = PYSearchExampleUITests;
+			productName = PYSearchExampleUITests;
+			productReference = 6B97178A1DC48FA800B2DAA1 /* PYSearchExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B97175B1DC48FA700B2DAA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CoderKo1o;
+				TargetAttributes = {
+					6B9717621DC48FA800B2DAA1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6B97177E1DC48FA800B2DAA1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6B9717621DC48FA800B2DAA1;
+					};
+					6B9717891DC48FA800B2DAA1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6B9717621DC48FA800B2DAA1;
+					};
+				};
+			};
+			buildConfigurationList = 6B97175E1DC48FA700B2DAA1 /* Build configuration list for PBXProject "PYSearchExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				es,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 6B97175A1DC48FA700B2DAA1;
+			productRefGroup = 6B9717641DC48FA800B2DAA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B9717621DC48FA800B2DAA1 /* PYSearchExample */,
+				6B97177E1DC48FA800B2DAA1 /* PYSearchExampleTests */,
+				6B9717891DC48FA800B2DAA1 /* PYSearchExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B9717611DC48FA800B2DAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9717791DC48FA800B2DAA1 /* LaunchScreen.storyboard in Resources */,
+				A6324EC11E3130FB00BAA226 /* Localizable.strings in Resources */,
+				6B3EB21F1DC498410080DF86 /* PYSearch.bundle in Resources */,
+				6B9717761DC48FA800B2DAA1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B97177D1DC48FA800B2DAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9717881DC48FA800B2DAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B97175F1DC48FA800B2DAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B3EB2201DC498410080DF86 /* PYSearchConst.m in Sources */,
+				6B3EB2241DC498410080DF86 /* UIView+PYSearchExtension.m in Sources */,
+				6B97179E1DC48FE800B2DAA1 /* PYSearchExampleController.m in Sources */,
+				6B3EB2211DC498410080DF86 /* PYSearchSuggestionViewController.m in Sources */,
+				6B3EB2221DC498410080DF86 /* PYSearchViewController.m in Sources */,
+				6B9DA6011DC8415700D07A16 /* PYTempViewController.m in Sources */,
+				6B9717681DC48FA800B2DAA1 /* main.m in Sources */,
+				6B3EB2231DC498410080DF86 /* UIColor+PYSearchExtension.m in Sources */,
+				6B8FA3851E1B781F00DFD42A /* NSBundle+PYSearchExtension.m in Sources */,
+				6B3EB2111DC498370080DF86 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B97177B1DC48FA800B2DAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9717841DC48FA800B2DAA1 /* PYSearchExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9717861DC48FA800B2DAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B97178F1DC48FA800B2DAA1 /* PYSearchExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B9717811DC48FA800B2DAA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9717621DC48FA800B2DAA1 /* PYSearchExample */;
+			targetProxy = 6B9717801DC48FA800B2DAA1 /* PBXContainerItemProxy */;
+		};
+		6B97178C1DC48FA800B2DAA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9717621DC48FA800B2DAA1 /* PYSearchExample */;
+			targetProxy = 6B97178B1DC48FA800B2DAA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B9717771DC48FA800B2DAA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B9717781DC48FA800B2DAA1 /* Base */,
+				A6324EBB1E312F1100BAA226 /* fr */,
+				A6324EBC1E312F1600BAA226 /* es */,
+				A6324EBD1E312F1C00BAA226 /* zh-Hans */,
+				A6324EBE1E312F2000BAA226 /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6324EC31E3130FB00BAA226 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6324EC21E3130FB00BAA226 /* en */,
+				A6324EC41E3130FE00BAA226 /* fr */,
+				A6324EC51E3130FE00BAA226 /* es */,
+				A6324EC61E3130FF00BAA226 /* zh-Hans */,
+				A6324EC71E31310000BAA226 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B9717911DC48FA800B2DAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B9717921DC48FA800B2DAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B9717941DC48FA800B2DAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PYSearchExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B9717951DC48FA800B2DAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PYSearchExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B9717971DC48FA800B2DAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PYSearchExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PYSearchExample.app/PYSearchExample";
+			};
+			name = Debug;
+		};
+		6B9717981DC48FA800B2DAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PYSearchExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PYSearchExample.app/PYSearchExample";
+			};
+			name = Release;
+		};
+		6B97179A1DC48FA800B2DAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PYSearchExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PYSearchExample;
+			};
+			name = Debug;
+		};
+		6B97179B1DC48FA800B2DAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PYSearchExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iphone5solo.PYSearchExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PYSearchExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B97175E1DC48FA700B2DAA1 /* Build configuration list for PBXProject "PYSearchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9717911DC48FA800B2DAA1 /* Debug */,
+				6B9717921DC48FA800B2DAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9717931DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9717941DC48FA800B2DAA1 /* Debug */,
+				6B9717951DC48FA800B2DAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9717961DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9717971DC48FA800B2DAA1 /* Debug */,
+				6B9717981DC48FA800B2DAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9717991DC48FA800B2DAA1 /* Build configuration list for PBXNativeTarget "PYSearchExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B97179A1DC48FA800B2DAA1 /* Debug */,
+				6B97179B1DC48FA800B2DAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B97175B1DC48FA700B2DAA1 /* Project object */;
+}

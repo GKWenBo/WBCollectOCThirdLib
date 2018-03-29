@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  AFN封装
+//
+//  Created by dabing on 15/10/23.
+//  Copyright (c) 2015年 大兵布莱恩特. All rights reserved.
+//
+
+#ifndef AFN___PrefixHeader_pch
+#define AFN___PrefixHeader_pch
+#import "AFNetworking.h"
+#import "MHNetwrok.h"
+
+#endif

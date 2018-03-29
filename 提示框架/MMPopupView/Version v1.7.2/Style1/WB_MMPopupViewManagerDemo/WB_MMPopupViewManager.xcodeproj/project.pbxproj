@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD1897FDCB21F0275A6330B8 /* libPods-WB_MMPopupViewManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B9E73EECE353CCB1D54424 /* libPods-WB_MMPopupViewManager.a */; };
+		C25540AB1EED948000698CAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540AA1EED948000698CAD /* main.m */; };
+		C25540AE1EED948000698CAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540AD1EED948000698CAD /* AppDelegate.m */; };
+		C25540B11EED948000698CAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540B01EED948000698CAD /* ViewController.m */; };
+		C25540B41EED948000698CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25540B21EED948000698CAD /* Main.storyboard */; };
+		C25540B61EED948000698CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25540B51EED948000698CAD /* Assets.xcassets */; };
+		C25540B91EED948000698CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25540B71EED948000698CAD /* LaunchScreen.storyboard */; };
+		C25540C31EED952300698CAD /* WBMMPopupViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540C21EED952300698CAD /* WBMMPopupViewManager.m */; };
+		C25540D11EED958400698CAD /* MMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540C61EED958400698CAD /* MMPopupView.m */; };
+		C25540D21EED958400698CAD /* MMPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540C81EED958400698CAD /* MMPopupWindow.m */; };
+		C25540D31EED958400698CAD /* MMPopupitem.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540CA1EED958400698CAD /* MMPopupitem.m */; };
+		C25540D41EED958400698CAD /* MMPopupCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540CC1EED958400698CAD /* MMPopupCategory.m */; };
+		C25540D51EED958400698CAD /* MMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = C25540CF1EED958400698CAD /* MMAlertView.m */; };
+		C29F92651EEE3F850004FC68 /* MMSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = C29F92641EEE3F850004FC68 /* MMSheetView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02B9E73EECE353CCB1D54424 /* libPods-WB_MMPopupViewManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WB_MMPopupViewManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA1C1701E828B4D62A9F052 /* Pods-WB_MMPopupViewManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WB_MMPopupViewManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WB_MMPopupViewManager/Pods-WB_MMPopupViewManager.debug.xcconfig"; sourceTree = "<group>"; };
+		C25540A61EED948000698CAD /* WB_MMPopupViewManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB_MMPopupViewManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25540AA1EED948000698CAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C25540AC1EED948000698CAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C25540AD1EED948000698CAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C25540AF1EED948000698CAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C25540B01EED948000698CAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C25540B31EED948000698CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C25540B51EED948000698CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C25540B81EED948000698CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C25540BA1EED948000698CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C25540C11EED952300698CAD /* WBMMPopupViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBMMPopupViewManager.h; sourceTree = "<group>"; };
+		C25540C21EED952300698CAD /* WBMMPopupViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBMMPopupViewManager.m; sourceTree = "<group>"; };
+		C25540C51EED958400698CAD /* MMPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupView.h; sourceTree = "<group>"; };
+		C25540C61EED958400698CAD /* MMPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupView.m; sourceTree = "<group>"; };
+		C25540C71EED958400698CAD /* MMPopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupWindow.h; sourceTree = "<group>"; };
+		C25540C81EED958400698CAD /* MMPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupWindow.m; sourceTree = "<group>"; };
+		C25540C91EED958400698CAD /* MMPopupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupItem.h; sourceTree = "<group>"; };
+		C25540CA1EED958400698CAD /* MMPopupitem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupitem.m; sourceTree = "<group>"; };
+		C25540CB1EED958400698CAD /* MMPopupCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupCategory.h; sourceTree = "<group>"; };
+		C25540CC1EED958400698CAD /* MMPopupCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupCategory.m; sourceTree = "<group>"; };
+		C25540CD1EED958400698CAD /* MMPopupDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupDefine.h; sourceTree = "<group>"; };
+		C25540CE1EED958400698CAD /* MMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAlertView.h; sourceTree = "<group>"; };
+		C25540CF1EED958400698CAD /* MMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAlertView.m; sourceTree = "<group>"; };
+		C25540D01EED958400698CAD /* MMSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSheetView.h; sourceTree = "<group>"; };
+		C29F92641EEE3F850004FC68 /* MMSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSheetView.m; sourceTree = "<group>"; };
+		DA148DC64FF15995B1113874 /* Pods-WB_MMPopupViewManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WB_MMPopupViewManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-WB_MMPopupViewManager/Pods-WB_MMPopupViewManager.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C25540A31EED948000698CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD1897FDCB21F0275A6330B8 /* libPods-WB_MMPopupViewManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51571FF560D11D441FA77224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B9E73EECE353CCB1D54424 /* libPods-WB_MMPopupViewManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C255409D1EED948000698CAD = {
+			isa = PBXGroup;
+			children = (
+				C25540A81EED948000698CAD /* WB_MMPopupViewManager */,
+				C25540A71EED948000698CAD /* Products */,
+				D77355DAA9F18133371B4E22 /* Pods */,
+				51571FF560D11D441FA77224 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C25540A71EED948000698CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C25540A61EED948000698CAD /* WB_MMPopupViewManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C25540A81EED948000698CAD /* WB_MMPopupViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				C25540C41EED957600698CAD /* MMPopupView */,
+				C25540C01EED94BF00698CAD /* WB_MMPopupViewManager */,
+				C25540AC1EED948000698CAD /* AppDelegate.h */,
+				C25540AD1EED948000698CAD /* AppDelegate.m */,
+				C25540AF1EED948000698CAD /* ViewController.h */,
+				C25540B01EED948000698CAD /* ViewController.m */,
+				C25540B21EED948000698CAD /* Main.storyboard */,
+				C25540B51EED948000698CAD /* Assets.xcassets */,
+				C25540B71EED948000698CAD /* LaunchScreen.storyboard */,
+				C25540BA1EED948000698CAD /* Info.plist */,
+				C25540A91EED948000698CAD /* Supporting Files */,
+			);
+			path = WB_MMPopupViewManager;
+			sourceTree = "<group>";
+		};
+		C25540A91EED948000698CAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C25540AA1EED948000698CAD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C25540C01EED94BF00698CAD /* WB_MMPopupViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				C25540C11EED952300698CAD /* WBMMPopupViewManager.h */,
+				C25540C21EED952300698CAD /* WBMMPopupViewManager.m */,
+			);
+			path = WB_MMPopupViewManager;
+			sourceTree = "<group>";
+		};
+		C25540C41EED957600698CAD /* MMPopupView */ = {
+			isa = PBXGroup;
+			children = (
+				C25540C51EED958400698CAD /* MMPopupView.h */,
+				C25540C61EED958400698CAD /* MMPopupView.m */,
+				C25540C71EED958400698CAD /* MMPopupWindow.h */,
+				C25540C81EED958400698CAD /* MMPopupWindow.m */,
+				C25540C91EED958400698CAD /* MMPopupItem.h */,
+				C25540CA1EED958400698CAD /* MMPopupitem.m */,
+				C25540CB1EED958400698CAD /* MMPopupCategory.h */,
+				C25540CC1EED958400698CAD /* MMPopupCategory.m */,
+				C25540CD1EED958400698CAD /* MMPopupDefine.h */,
+				C25540CE1EED958400698CAD /* MMAlertView.h */,
+				C25540CF1EED958400698CAD /* MMAlertView.m */,
+				C25540D01EED958400698CAD /* MMSheetView.h */,
+				C29F92641EEE3F850004FC68 /* MMSheetView.m */,
+			);
+			path = MMPopupView;
+			sourceTree = "<group>";
+		};
+		D77355DAA9F18133371B4E22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AA1C1701E828B4D62A9F052 /* Pods-WB_MMPopupViewManager.debug.xcconfig */,
+				DA148DC64FF15995B1113874 /* Pods-WB_MMPopupViewManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C25540A51EED948000698CAD /* WB_MMPopupViewManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C25540BD1EED948000698CAD /* Build configuration list for PBXNativeTarget "WB_MMPopupViewManager" */;
+			buildPhases = (
+				B05241C5F9574854A0C8BB12 /* [CP] Check Pods Manifest.lock */,
+				C25540A21EED948000698CAD /* Sources */,
+				C25540A31EED948000698CAD /* Frameworks */,
+				C25540A41EED948000698CAD /* Resources */,
+				7A361681811A0C9679BE0048 /* [CP] Embed Pods Frameworks */,
+				9C0E4527047FC21EAD1760EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WB_MMPopupViewManager;
+			productName = WB_MMPopupViewManager;
+			productReference = C25540A61EED948000698CAD /* WB_MMPopupViewManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C255409E1EED948000698CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "文波";
+				TargetAttributes = {
+					C25540A51EED948000698CAD = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C25540A11EED948000698CAD /* Build configuration list for PBXProject "WB_MMPopupViewManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C255409D1EED948000698CAD;
+			productRefGroup = C25540A71EED948000698CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C25540A51EED948000698CAD /* WB_MMPopupViewManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C25540A41EED948000698CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25540B91EED948000698CAD /* LaunchScreen.storyboard in Resources */,
+				C25540B61EED948000698CAD /* Assets.xcassets in Resources */,
+				C25540B41EED948000698CAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A361681811A0C9679BE0048 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WB_MMPopupViewManager/Pods-WB_MMPopupViewManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0E4527047FC21EAD1760EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WB_MMPopupViewManager/Pods-WB_MMPopupViewManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B05241C5F9574854A0C8BB12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C25540A21EED948000698CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25540D41EED958400698CAD /* MMPopupCategory.m in Sources */,
+				C25540B11EED948000698CAD /* ViewController.m in Sources */,
+				C25540AE1EED948000698CAD /* AppDelegate.m in Sources */,
+				C25540D21EED958400698CAD /* MMPopupWindow.m in Sources */,
+				C29F92651EEE3F850004FC68 /* MMSheetView.m in Sources */,
+				C25540D31EED958400698CAD /* MMPopupitem.m in Sources */,
+				C25540C31EED952300698CAD /* WBMMPopupViewManager.m in Sources */,
+				C25540AB1EED948000698CAD /* main.m in Sources */,
+				C25540D51EED958400698CAD /* MMAlertView.m in Sources */,
+				C25540D11EED958400698CAD /* MMPopupView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C25540B21EED948000698CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25540B31EED948000698CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C25540B71EED948000698CAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C25540B81EED948000698CAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C25540BB1EED948000698CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C25540BC1EED948000698CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C25540BE1EED948000698CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA1C1701E828B4D62A9F052 /* Pods-WB_MMPopupViewManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WB_MMPopupViewManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WMB.WB-MMPopupViewManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C25540BF1EED948000698CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA148DC64FF15995B1113874 /* Pods-WB_MMPopupViewManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WB_MMPopupViewManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "WMB.WB-MMPopupViewManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C25540A11EED948000698CAD /* Build configuration list for PBXProject "WB_MMPopupViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25540BB1EED948000698CAD /* Debug */,
+				C25540BC1EED948000698CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C25540BD1EED948000698CAD /* Build configuration list for PBXNativeTarget "WB_MMPopupViewManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C25540BE1EED948000698CAD /* Debug */,
+				C25540BF1EED948000698CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C255409E1EED948000698CAD /* Project object */;
+}
