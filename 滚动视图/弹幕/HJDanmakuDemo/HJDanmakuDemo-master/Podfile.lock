@@ -1,0 +1,16 @@
+PODS:
+  - HJDanmaku (2.0.0)
+
+DEPENDENCIES:
+  - HJDanmaku (from `./`)
+
+EXTERNAL SOURCES:
+  HJDanmaku:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  HJDanmaku: ce6b35b77d67cf709a3ef8db77f017db89c78139
+
+PODFILE CHECKSUM: da6a21c2d0b2a4aea606c06aa7ff1952e4bb850a
+
+COCOAPODS: 1.1.1
