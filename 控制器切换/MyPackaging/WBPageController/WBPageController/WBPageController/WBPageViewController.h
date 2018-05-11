@@ -12,30 +12,35 @@
 
 #import <UIKit/UIKit.h>
 #import "WBSegmentView.h"
-#import "WBPageContentView.h"
+#import "WBPageViewControllerDelegate.h"
+#import "UIViewController+WBPageViewController.h"
+#import "WBCollectionView.h"
 
-typedef NS_ENUM(NSInteger, WBSegmentPositionStyle) {
-    WBSegmentPositionNaviStyle, /** < 分段控件在导航栏 >  */
-    WBSegmentPositionSubStyle   /** < 分段控件在subView >  */
-};
+@interface WBPageViewController : UIViewController <WBSegmentViewDelegate,WBPageViewControllerDelegate>
 
-@interface WBPageViewController : UIViewController <WBSegmentViewDelegate,WBPageContentViewDelegate>
-
+/** < 属性代理 >  */
+@property (nonatomic, weak) id <WBPageViewControllerDelegate> delegate;
 /** < 分段控件 >  */
 @property (nonatomic, strong) WBSegmentView *segementView;
-/** < 内容视图 >  */
-@property (nonatomic, strong) WBPageContentView *contentView;
+/** < 控制器容器视图 >  */
+@property (nonatomic, strong, readonly) WBCollectionView *collectionView;
 
-/**
- 初始化方法
+/** < 当前控制器 >  */
+@property (nonatomic, strong, readonly) UIViewController *currentChildVc;
+/** < 是否显示在导航栏 默认：NO >  */
+@property (nonatomic, assign) BOOL showOnNavigationBar;
+/** < 选中下标 default: 0 >  */
+@property (nonatomic, assign) NSInteger selectedIndex;
+/** < Title color, defaulut: grayColor>  */
+@property (nonatomic, strong) UIColor *titleNormalColor;
+/** < Title selected color, default: blackColor >  */
+@property (nonatomic, strong) UIColor *titleSelectedColor;
+/** < Title font, default: 14pt>  */
+@property (nonatomic, strong) UIFont *titleNormalFont;
+/** < Title selected font, default: 14pt>  */
+@property (nonatomic, strong) UIFont *titleSelectedFont;
 
- @param titles 标题
- @param childVcs 子控制器名数组
- @param position 分段控件位置
- @return WBPageViewController
- */
-- (instancetype)initWithSegmentTitles:(NSArray <NSString *>*)titles
-                             childVcs:(NSArray <UIViewController<WBPageChildVcDelegate> *>*)childVcs
-                             position:(WBSegmentPositionStyle)position;
+/** 给外界 重新加载内容的方法 */
+- (void)reload;
 
 @end

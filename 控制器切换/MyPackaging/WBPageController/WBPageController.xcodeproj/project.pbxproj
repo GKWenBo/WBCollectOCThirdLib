@@ -17,11 +17,11 @@
 		C234493920A28EBF00A71895 /* WBPageControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C234493820A28EBF00A71895 /* WBPageControllerUITests.m */; };
 		C234495620A2945600A71895 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C234495520A2945500A71895 /* HMSegmentedControl.m */; };
 		C234496220A2D36100A71895 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496120A2D36100A71895 /* TestViewController.m */; };
-		C234497020A2DDD600A71895 /* WBPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496520A2DDD600A71895 /* WBPageContentView.m */; };
-		C234497120A2DDD600A71895 /* UIViewController+WBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496620A2DDD600A71895 /* UIViewController+WBPageViewController.m */; };
-		C234497220A2DDD600A71895 /* WBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496820A2DDD600A71895 /* WBCollectionView.m */; };
-		C234497320A2DDD600A71895 /* WBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496A20A2DDD600A71895 /* WBPageViewController.m */; };
-		C234497420A2DDD600A71895 /* WBSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C234496B20A2DDD600A71895 /* WBSegmentView.m */; };
+		C2D891A320A456DA00B8A9F4 /* WBPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8919820A456D900B8A9F4 /* WBPageContentView.m */; };
+		C2D891A420A456DA00B8A9F4 /* UIViewController+WBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8919920A456D900B8A9F4 /* UIViewController+WBPageViewController.m */; };
+		C2D891A520A456DA00B8A9F4 /* WBCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8919B20A456D900B8A9F4 /* WBCollectionView.m */; };
+		C2D891A620A456DA00B8A9F4 /* WBPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8919C20A456D900B8A9F4 /* WBPageViewController.m */; };
+		C2D891A720A456DA00B8A9F4 /* WBSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D8919D20A456D900B8A9F4 /* WBSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,17 +62,17 @@
 		C234495520A2945500A71895 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
 		C234496020A2D36100A71895 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		C234496120A2D36100A71895 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		C234496520A2DDD600A71895 /* WBPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPageContentView.m; sourceTree = "<group>"; };
-		C234496620A2DDD600A71895 /* UIViewController+WBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WBPageViewController.m"; sourceTree = "<group>"; };
-		C234496720A2DDD600A71895 /* WBSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSegmentView.h; sourceTree = "<group>"; };
-		C234496820A2DDD600A71895 /* WBCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCollectionView.m; sourceTree = "<group>"; };
-		C234496920A2DDD600A71895 /* WBPageChildVcDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageChildVcDelegate.h; sourceTree = "<group>"; };
-		C234496A20A2DDD600A71895 /* WBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPageViewController.m; sourceTree = "<group>"; };
-		C234496B20A2DDD600A71895 /* WBSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSegmentView.m; sourceTree = "<group>"; };
-		C234496C20A2DDD600A71895 /* UIViewController+WBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WBPageViewController.h"; sourceTree = "<group>"; };
-		C234496D20A2DDD600A71895 /* WBPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageContentView.h; sourceTree = "<group>"; };
-		C234496E20A2DDD600A71895 /* WBCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCollectionView.h; sourceTree = "<group>"; };
-		C234496F20A2DDD600A71895 /* WBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageViewController.h; sourceTree = "<group>"; };
+		C2D8919820A456D900B8A9F4 /* WBPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPageContentView.m; sourceTree = "<group>"; };
+		C2D8919920A456D900B8A9F4 /* UIViewController+WBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WBPageViewController.m"; sourceTree = "<group>"; };
+		C2D8919A20A456D900B8A9F4 /* WBSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSegmentView.h; sourceTree = "<group>"; };
+		C2D8919B20A456D900B8A9F4 /* WBCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCollectionView.m; sourceTree = "<group>"; };
+		C2D8919C20A456D900B8A9F4 /* WBPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPageViewController.m; sourceTree = "<group>"; };
+		C2D8919D20A456D900B8A9F4 /* WBSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSegmentView.m; sourceTree = "<group>"; };
+		C2D8919E20A456D900B8A9F4 /* UIViewController+WBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WBPageViewController.h"; sourceTree = "<group>"; };
+		C2D8919F20A456D900B8A9F4 /* WBPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageContentView.h; sourceTree = "<group>"; };
+		C2D891A020A456D900B8A9F4 /* WBCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBCollectionView.h; sourceTree = "<group>"; };
+		C2D891A120A456D900B8A9F4 /* WBPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageViewController.h; sourceTree = "<group>"; };
+		C2D891A220A456D900B8A9F4 /* WBPageViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPageViewControllerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 		C234491320A28EBE00A71895 /* WBPageController */ = {
 			isa = PBXGroup;
 			children = (
-				C234496420A2DDD600A71895 /* WBPageController */,
+				C2D8919720A456D900B8A9F4 /* WBPageController */,
 				C234495320A2945500A71895 /* HMSegmentedControl */,
 				C234491420A28EBE00A71895 /* AppDelegate.h */,
 				C234491520A28EBE00A71895 /* AppDelegate.m */,
@@ -167,20 +167,20 @@
 			path = HMSegmentedControl;
 			sourceTree = "<group>";
 		};
-		C234496420A2DDD600A71895 /* WBPageController */ = {
+		C2D8919720A456D900B8A9F4 /* WBPageController */ = {
 			isa = PBXGroup;
 			children = (
-				C234496D20A2DDD600A71895 /* WBPageContentView.h */,
-				C234496520A2DDD600A71895 /* WBPageContentView.m */,
-				C234496E20A2DDD600A71895 /* WBCollectionView.h */,
-				C234496820A2DDD600A71895 /* WBCollectionView.m */,
-				C234496920A2DDD600A71895 /* WBPageChildVcDelegate.h */,
-				C234496720A2DDD600A71895 /* WBSegmentView.h */,
-				C234496B20A2DDD600A71895 /* WBSegmentView.m */,
-				C234496C20A2DDD600A71895 /* UIViewController+WBPageViewController.h */,
-				C234496620A2DDD600A71895 /* UIViewController+WBPageViewController.m */,
-				C234496F20A2DDD600A71895 /* WBPageViewController.h */,
-				C234496A20A2DDD600A71895 /* WBPageViewController.m */,
+				C2D8919E20A456D900B8A9F4 /* UIViewController+WBPageViewController.h */,
+				C2D8919920A456D900B8A9F4 /* UIViewController+WBPageViewController.m */,
+				C2D891A020A456D900B8A9F4 /* WBCollectionView.h */,
+				C2D8919B20A456D900B8A9F4 /* WBCollectionView.m */,
+				C2D891A120A456D900B8A9F4 /* WBPageViewController.h */,
+				C2D8919C20A456D900B8A9F4 /* WBPageViewController.m */,
+				C2D8919A20A456D900B8A9F4 /* WBSegmentView.h */,
+				C2D8919D20A456D900B8A9F4 /* WBSegmentView.m */,
+				C2D8919F20A456D900B8A9F4 /* WBPageContentView.h */,
+				C2D8919820A456D900B8A9F4 /* WBPageContentView.m */,
+				C2D891A220A456D900B8A9F4 /* WBPageViewControllerDelegate.h */,
 			);
 			path = WBPageController;
 			sourceTree = "<group>";
@@ -315,14 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C234497020A2DDD600A71895 /* WBPageContentView.m in Sources */,
+				C2D891A320A456DA00B8A9F4 /* WBPageContentView.m in Sources */,
 				C234491920A28EBE00A71895 /* ViewController.m in Sources */,
 				C234496220A2D36100A71895 /* TestViewController.m in Sources */,
 				C234492420A28EBF00A71895 /* main.m in Sources */,
-				C234497320A2DDD600A71895 /* WBPageViewController.m in Sources */,
-				C234497120A2DDD600A71895 /* UIViewController+WBPageViewController.m in Sources */,
-				C234497220A2DDD600A71895 /* WBCollectionView.m in Sources */,
-				C234497420A2DDD600A71895 /* WBSegmentView.m in Sources */,
+				C2D891A620A456DA00B8A9F4 /* WBPageViewController.m in Sources */,
+				C2D891A420A456DA00B8A9F4 /* UIViewController+WBPageViewController.m in Sources */,
+				C2D891A520A456DA00B8A9F4 /* WBCollectionView.m in Sources */,
+				C2D891A720A456DA00B8A9F4 /* WBSegmentView.m in Sources */,
 				C234495620A2945600A71895 /* HMSegmentedControl.m in Sources */,
 				C234491620A28EBE00A71895 /* AppDelegate.m in Sources */,
 			);
@@ -493,8 +493,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WBPageController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,8 +512,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_LINK_OBJC_RUNTIME = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WBPageController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

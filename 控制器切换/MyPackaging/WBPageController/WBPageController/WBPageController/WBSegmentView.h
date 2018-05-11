@@ -24,15 +24,15 @@
 
 @end
 
-
 @interface WBSegmentView : UIView
-
 
 @property (nonatomic, assign) id<WBSegmentViewDelegate> delegate;
 /** < 分段控件 >  */
 @property (nonatomic, strong) HMSegmentedControl *segmentControl;
 /**  < 标题字体大小 默认系统14pt >  */
-@property (nonatomic, strong) UIFont *font;
+@property (nonatomic, strong) UIFont *normalFont;
+/** < 选中字体大小 default: 14pt >  */
+@property (nonatomic, strong) UIFont *selectedFont;
 /**  < 未选中颜色 默认白色 >  */
 @property (nonatomic, strong) UIColor *normalColor;
 /**  < 选中颜色 默认白色 >  */
@@ -57,5 +57,12 @@
  @param animated 是否动画
  */
 - (void)setSelectedIndex:(NSInteger)index animated:(BOOL)animated;
+
+/**
+ 重设位置大小
+
+ @param frame CGRect
+ */
+- (void)wb_resetFrame:(CGRect)frame;
 
 @end

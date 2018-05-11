@@ -7,23 +7,23 @@
 //
 
 #import "UIViewController+WBPageViewController.h"
-#import "WBPageChildVcDelegate.h"
+//#import "WBPageViewControllerDelegate.h"
 #import <objc/runtime.h>
 
 static void *WBCurrentIndexKey = &WBCurrentIndexKey;
 
 @implementation UIViewController (WBPageViewController)
 
-- (UIViewController *)wb_pageViewController {
-    UIViewController *controller = self;
-    while (controller) {
-        if ([controller conformsToProtocol:@protocol(WBPageChildVcDelegate)]) {
-            break;
-        }
-        controller = controller.parentViewController;
-    }
-    return controller;
-}
+//- (UIViewController *)wb_pageViewController {
+//    UIViewController *controller = self;
+//    while (controller) {
+//        if ([controller conformsToProtocol:@protocol(WBPageChildVcDelegate)]) {
+//            break;
+//        }
+//        controller = controller.parentViewController;
+//    }
+//    return controller;
+//}
 
 - (void)setWb_currentIndex:(NSInteger)wb_currentIndex {
     objc_setAssociatedObject(self, WBCurrentIndexKey, [NSNumber numberWithInteger:wb_currentIndex], OBJC_ASSOCIATION_ASSIGN);

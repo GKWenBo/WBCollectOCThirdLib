@@ -1,12 +1,16 @@
 //
-//  WBScrollPageView.m
+//  WBPageContentView.m
 //  WBPageController
 //
-//  Created by wenbo on 2018/5/9.
+//  Created by wenbo on 2018/5/10.
 //  Copyright © 2018年 wenbo. All rights reserved.
 //
 
 #import "WBPageContentView.h"
+#import "WBCollectionView.h"
+
+#define kWBWeakObjc(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+#define kWBStrongObjc(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
 
 static NSString *kIdentifier = @"CELLID";
 
@@ -22,18 +26,19 @@ static NSString *kIdentifier = @"CELLID";
 /** < collectionView的布局 >  */
 @property (nonatomic, strong) UICollectionViewFlowLayout *flowLayout;
 /** < 父类 用于处理添加子控制器  使用weak避免循环引用 >  */
-@property (nonatomic, weak) UIViewController *parentViewController;
+@property (weak, nonatomic) UIViewController *parentViewController;
 /** < 所有子控制器 >  */
-@property (nonatomic, strong) NSMutableArray <UIViewController<WBPageChildVcDelegate> *>*childVcs;
+@property (nonatomic, strong) NSMutableDictionary <NSNumber *,UIViewController *>*childVcsDict;
 /** < 当前下标 >  */
 @property (nonatomic, assign) NSInteger currentIndex;
+/** < 上个下标 >  */
 @property (nonatomic, assign) NSInteger oldIndex;
-/** < 是否需要手动管理生命周期方法的调用 >  */
-@property (nonatomic, assign) BOOL needManageLifeCycle;
 /** < 滚动超过页面(直接设置contentOffSet导致) >  */
 @property (nonatomic, assign) BOOL scrollOverOnePage;
 /** < 当这个属性设置为YES的时候 就不用处理 scrollView滚动的计算 >  */
 @property (assign, nonatomic) BOOL forbidTouchToAdjustPosition;
+/** < 子控制器个数 >  */
+@property (nonatomic, assign) NSInteger childVcCount;
 
 @end
 
@@ -46,95 +51,68 @@ static NSString *kIdentifier = @"CELLID";
 #if DEBUG
     NSLog(@"ZJContentView---销毁");
 #endif
-
+    
 }
 
 #pragma mark < 初始化 >
-- (instancetype)initWithFrame:(CGRect)frame
-         parentViewController:(UIViewController *)parentViewController
-                     childVcs:(NSArray<UIViewController<WBPageChildVcDelegate> *> *)childVcs {
+- (instancetype)initWithFrame:(CGRect)frame parentViewController:(UIViewController *)parentViewController delegate:(id<WBPageContentViewDelegate>)delegate {
     if (self = [super initWithFrame:frame]) {
+        self.delegate = delegate;
         self.parentViewController = parentViewController;
-        _needManageLifeCycle = [parentViewController shouldAutomaticallyForwardAppearanceMethods];
-        [self.childVcs removeAllObjects];
-        [self.childVcs addObjectsFromArray:childVcs];
-        if (!_needManageLifeCycle) {
-#if DEBUG
-            NSLog(@"\n请注意: 如果你希望所有的子控制器的view的系统生命周期方法被正确的调用\n请重写%@的'shouldAutomaticallyForwardAppearanceMethods'方法 并且返回NO\n当然如果你不做这个操作, 子控制器的生命周期方法将不会被正确的调用\n如果你仍然想利用子控制器的生命周期方法, 请使用'ZJScrollPageViewChildVcDelegate'提供的代理方法\n或者'ZJScrollPageViewDelegate'提供的代理方法", [parentViewController class]);
-#endif
-        }
-        [self commonInit];
-        [self addSubview:self.collectionView];
-        
-        [self addNotification];
+        [self wb_commonInit];
     }
     return self;
 }
 
-#pragma mark < Private Method >
-- (void)commonInit {
+- (void)wb_commonInit {
     _oldIndex = -1;
     _currentIndex = 0;
     _oldOffSetX = 0.0f;
+    _forbidTouchToAdjustPosition = NO;
     _isLoadFirstView = YES;
+    _selectedIndex = 0;
+    _isNeedBounce = NO;
     _sysVersion = [[[UIDevice currentDevice] systemVersion] integerValue];
     
-    /** < 添加控制器 >  */
-//    [self.childVcs enumerateObjectsUsingBlock:^(UIViewController<WBPageChildVcDelegate> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//        [self.parentViewController addChildViewController:obj];
-//    }];
+    if (_delegate && [_delegate respondsToSelector:@selector(numberOfChildViewControllers:)]) {
+        self.childVcCount = [_delegate numberOfChildViewControllers:self];
+    }
     
+    [self addNotification];
+    [self wb_dealGestureConflict];
+    [self wb_addCollectionView];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    if (self.currentChildVc) {
+        self.currentChildVc.view.frame = self.bounds;
+    }
+}
+
+#pragma mark < Private Method >
+- (void)addNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveMemoryWarningHander) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
+}
+
+- (void)wb_dealGestureConflict {
     UINavigationController *nav = (UINavigationController *)self.parentViewController.parentViewController;
     if ([nav isKindOfClass:[UINavigationController class]]) {
-        if (nav.viewControllers.count == 1) return;
+        if (nav.viewControllers.count == 1) {
+            return;
+        }
         if (nav.interactivePopGestureRecognizer) {
             [self.collectionView setupScrollViewShouldBeginPanGestureHandler:^BOOL(WBCollectionView *collectionView, UIPanGestureRecognizer *panGesture) {
                 CGFloat transionX = [panGesture translationInView:panGesture.view].x;
                 if (collectionView.contentOffset.x == 0 && transionX > 0) {
                     nav.interactivePopGestureRecognizer.enabled = YES;
-                }else {
+                }
+                else {
                     nav.interactivePopGestureRecognizer.enabled = NO;
                 }
                 return YES;
             }];
         }
-    }
-}
-
-- (void)addNotification {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveMemoryWarningHander) name:UIApplicationDidReceiveMemoryWarningNotification object:nil];
-}
-
-- (void)setupChildVcForCell:(UICollectionViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    _currentChildVc = self.childVcs[indexPath.item];
-    if (_currentChildVc.wb_pageViewController != self.parentViewController) {
-        [self.parentViewController addChildViewController:_currentChildVc];
-        _currentChildVc.wb_currentIndex = indexPath.item;
-    }
-    
-    /** < 这里建立子控制器和父控制器的关系 >  */
-    if ([_currentChildVc isKindOfClass:[UINavigationController class]]) {
-        NSAssert(NO, @"不要添加UINavigationController包装后的子控制器");
-    }
-    _currentChildVc.view.frame = cell.contentView.bounds;
-    if (indexPath.item == 0) {
-        _currentChildVc.view.backgroundColor = [UIColor redColor];
-
-    }else {
-        _currentChildVc.view.backgroundColor = [UIColor orangeColor];
-
-    }
-        [cell.contentView addSubview:_currentChildVc.view];
-    [_currentChildVc didMoveToParentViewController:self.parentViewController];
-    
-    if (_isLoadFirstView) { // 第一次加载cell? 不会调用endDisplayCell
-        [self willAppearWithIndex:indexPath.item];
-        [self didAppearWithIndex:indexPath.item];
-        _isLoadFirstView = NO;
-    }
-    else {
-        [self willAppearWithIndex:indexPath.item];
-        [self willDisappearWithIndex:_oldIndex];
     }
 }
 
@@ -144,84 +122,59 @@ static NSString *kIdentifier = @"CELLID";
     [childVc removeFromParentViewController];
 }
 
-- (void)contentViewDidMoveFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex progress:(CGFloat)progress {
+- (void)wb_addCollectionView {
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
+    flowLayout.itemSize = self.bounds.size;
+    flowLayout.minimumLineSpacing = 0.f;
+    flowLayout.minimumInteritemSpacing = 0.f;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.flowLayout = flowLayout;
     
+    WBCollectionView *collectonview = [[WBCollectionView alloc]initWithFrame:self.bounds collectionViewLayout:flowLayout];
+    collectonview.delegate = self;
+    collectonview.dataSource = self;
+    collectonview.backgroundColor = [UIColor whiteColor];
+    collectonview.pagingEnabled = YES;
+    collectonview.scrollsToTop = NO;
+    collectonview.bounces = _isNeedBounce;
+    collectonview.showsHorizontalScrollIndicator = NO;
+    [collectonview registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kIdentifier];
+    if (@available(iOS 11.0,*)) {
+        _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+    [self addSubview:collectonview];
+    self.collectionView = collectonview;
 }
 
-- (void)didAppearWithIndex:(NSInteger)index {
-    UIViewController<WBPageChildVcDelegate> *controller = self.childVcs[index];
-    if (controller) {
-        if ([controller respondsToSelector:@selector(wb_viewDidAppearForIndex:)]) {
-            [controller wb_viewDidAppearForIndex:index];
+- (void)setupChildVcForCell:(UICollectionViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    _currentChildVc = [self.childVcsDict objectForKey:@(indexPath.item)];
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(pageContentView:reuseViewController:viewControllerAtIndex:)]) {
+        if (_currentChildVc == nil) {
+            _currentChildVc = [_delegate pageContentView:self reuseViewController:nil viewControllerAtIndex:indexPath.item];
+            _currentChildVc.wb_currentIndex = indexPath.item;
+            [self.childVcsDict setObject:_currentChildVc forKey:@(indexPath.item)];
+        }else {
+            [_delegate pageContentView:self reuseViewController:_currentChildVc viewControllerAtIndex:indexPath.item];
         }
-        if (_needManageLifeCycle) {
-            [controller endAppearanceTransition];
-        }
+    }else {
+        NSAssert(NO, @"必须设置代理和实现代理方法");
     }
+    /** < 这里建立子控制器和父控制器的关系 >  */
+    if ([_currentChildVc isKindOfClass:[UINavigationController class]]) {
+        NSAssert(NO, @"不要添加UINavigationController包装后的子控制器");
+    }
+    if (_currentChildVc.parentViewController != self.parentViewController) {
+        [self.parentViewController addChildViewController:_currentChildVc];
+    }
+    _currentChildVc.view.frame = cell.contentView.bounds;
+    [cell.contentView addSubview:_currentChildVc.view];
+    [_currentChildVc didMoveToParentViewController:self.parentViewController];
 }
 
-- (void)didDisappearWithIndex:(NSInteger)index {
-    UIViewController<WBPageChildVcDelegate> *controller = self.childVcs[index];
-    if (controller) {
-        if ([controller respondsToSelector:@selector(wb_viewDidDisappearForIndex:)]) {
-            [controller wb_viewDidDisappearForIndex:index];
-        }
-        if (_needManageLifeCycle) {
-            [controller endAppearanceTransition];
-        }
-    }
-}
-
-- (void)willAppearWithIndex:(NSInteger)index {
-    UIViewController<WBPageChildVcDelegate> *controller = self.childVcs[index];
-    if (controller) {
-        if ([controller respondsToSelector:@selector(wb_viewWillAppearForIndex:)]) {
-            [controller wb_viewWillAppearForIndex:index];
-        }
-        if (_needManageLifeCycle) {
-            [controller beginAppearanceTransition:YES animated:NO];
-        }
-        
-    }
-}
-
-- (void)willDisappearWithIndex:(NSInteger)index {
-    UIViewController<WBPageChildVcDelegate> *controller = self.childVcs[index];
-    if (controller) {
-        if ([controller respondsToSelector:@selector(wb_viewWillDisappearForIndex:)]) {
-            [controller wb_viewWillDisappearForIndex:index];
-        }
-        if (_needManageLifeCycle) {
-            [controller beginAppearanceTransition:NO animated:NO];
-            
-        }
-    }
-}
-
-// 处理当前子控制器的生命周期 : 已知问题, 当push的时候会被调用两次
-- (void)willMoveToWindow:(nullable UIWindow *)newWindow {
-    [super willMoveToWindow:newWindow];
-    if (newWindow == nil) {
-        [self willDisappearWithIndex:_currentIndex];
-    }
-    else {
-        [self willAppearWithIndex:_currentIndex];
-    }
-}
-
-- (void)didMoveToWindow {
-    [super didMoveToWindow];
-    if (self.window == nil) {
-        [self didDisappearWithIndex:_currentIndex];
-    }
-    else {
-        [self didAppearWithIndex:_currentIndex];
-    }
-}
-
-#pragma mark < Public Method >
 - (void)setContentOffSet:(CGPoint)offset animated:(BOOL)animated {
     self.forbidTouchToAdjustPosition = YES;
+    
     NSInteger currentIndex = offset.x / self.collectionView.bounds.size.width;
     _oldIndex = _currentIndex;
     self.currentIndex = currentIndex;
@@ -231,27 +184,17 @@ static NSString *kIdentifier = @"CELLID";
     if (page >= 2) {// 需要滚动两页以上的时候, 跳过中间页的动画
         _scrollOverOnePage = YES;
     }
-    
     [self.collectionView setContentOffset:offset animated:animated];
 }
 
-- (void)reload {
-    [self.childVcs enumerateObjectsUsingBlock:^(UIViewController<WBPageChildVcDelegate> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [WBPageContentView removeChildVc:obj];
-        obj = nil;
-    }];
-    self.childVcs = nil;
-    [self commonInit];
-    [self.collectionView reloadData];
-    [self setContentOffSet:CGPointZero animated:NO];
-}
-
-#pragma mark < Noti >
+#pragma mark < 通知 >
 - (void)receiveMemoryWarningHander {
-    [self.childVcs enumerateObjectsUsingBlock:^(UIViewController<WBPageChildVcDelegate> * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (obj != self.currentChildVc) {
-            [self.childVcs removeObject:obj];
+    @kWBWeakObjc(self)
+    [self.childVcsDict enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, UIViewController * _Nonnull obj, BOOL * _Nonnull stop) {
+        @kWBStrongObjc(self)
+        if (obj != _currentChildVc) {
             [WBPageContentView removeChildVc:obj];
+            [self.childVcsDict removeObjectForKey:key];
         }
     }];
 }
@@ -262,7 +205,7 @@ static NSString *kIdentifier = @"CELLID";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.childVcs.count;
+    return self.childVcCount;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -281,55 +224,6 @@ static NSString *kIdentifier = @"CELLID";
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (!self.forbidTouchToAdjustPosition) {
-        if (_currentIndex == indexPath.item) {
-            /** < 没有滚动完成 >  */
-            if (_needManageLifeCycle) {
-                UIViewController <WBPageChildVcDelegate>*currentVc = self.childVcs[_oldIndex];
-                /** < 开始出现 >  */
-                [currentVc beginAppearanceTransition:YES animated:NO];
-                
-                UIViewController <WBPageChildVcDelegate>*oldVc = self.childVcs[indexPath.item];
-                /** < 开始消失 >  */
-                [oldVc beginAppearanceTransition:NO animated:NO];
-            }
-            [self didAppearWithIndex:_oldIndex];
-            [self didDisappearWithIndex:indexPath.item];
-        }else {
-            if (_oldIndex == indexPath.item) {
-                /** < 滚动完成 >  */
-                [self didAppearWithIndex:_currentIndex];
-                [self didDisappearWithIndex:indexPath.item];
-            }else {
-                /** < 滚动没有完成又快速的反向打开了另一页 >  */
-                if (_needManageLifeCycle) {
-                    UIViewController <WBPageChildVcDelegate>*currentVc = self.childVcs[_oldIndex];
-                    /** < 开始出现 >  */
-                    [currentVc beginAppearanceTransition:YES animated:NO];
-                    
-                    UIViewController <WBPageChildVcDelegate>*oldVc = self.childVcs[indexPath.item];
-                    /** < 开始消失 >  */
-                    [oldVc beginAppearanceTransition:NO animated:NO];
-                }
-                [self didAppearWithIndex:_oldIndex];
-                [self didDisappearWithIndex:indexPath.item];
-            }
-        }
-    }else {
-        if (_scrollOverOnePage) {
-            if (labs(_currentIndex - indexPath.item) == 1) {
-                /** < 滚动完成 >  */
-                [self didAppearWithIndex:_currentIndex];
-                [self didDisappearWithIndex:_oldIndex];
-            }
-        }else {
-            [self didDisappearWithIndex:_oldIndex];
-            [self didAppearWithIndex:_currentIndex];
-        }
-    }
-}
-
 #pragma mark < UIScrollViewDelegate >
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (self.forbidTouchToAdjustPosition || // 点击标题滚动
@@ -339,10 +233,10 @@ static NSString *kIdentifier = @"CELLID";
     }
     CGFloat tempProgress = scrollView.contentOffset.x / self.bounds.size.width;
     NSInteger tempIndex = tempProgress;
-
+    
     CGFloat progress = tempProgress - floor(tempProgress);
     CGFloat deltaX = scrollView.contentOffset.x - _oldOffSetX;
-
+    
     if (deltaX > 0) {// 向左
         if (progress == 0.0) {
             return;
@@ -354,18 +248,16 @@ static NSString *kIdentifier = @"CELLID";
         progress = 1.0 - progress;
         self.oldIndex = tempIndex+1;
         self.currentIndex = tempIndex;
-
     }
     else {
         return;
     }
-    [self contentViewDidMoveFromIndex:_oldIndex toIndex:_currentIndex progress:progress];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger currentIndex = (scrollView.contentOffset.x / self.bounds.size.width);
-    if (_delegate && [_delegate respondsToSelector:@selector(wbPageContentView:didScrollToCurrentIndex:)]) {
-        [_delegate wbPageContentView:self didScrollToCurrentIndex:currentIndex];
+    if (_delegate && [_delegate respondsToSelector:@selector(pageContentView:didScrollToIndex:)]) {
+        [_delegate pageContentView:self didScrollToIndex:currentIndex];
     }
 }
 
@@ -374,7 +266,6 @@ static NSString *kIdentifier = @"CELLID";
     self.forbidTouchToAdjustPosition = NO;
 }
 
-
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     UINavigationController *navi = (UINavigationController *)self.parentViewController.parentViewController;
     if ([navi isKindOfClass:[UINavigationController class]] && navi.interactivePopGestureRecognizer) {
@@ -382,41 +273,42 @@ static NSString *kIdentifier = @"CELLID";
     }
 }
 
-#pragma mark < getter >
-- (UICollectionViewFlowLayout *)flowLayout {
-    if (!_flowLayout) {
-        _flowLayout = [[UICollectionViewFlowLayout alloc]init];
-        _flowLayout.itemSize = self.bounds.size;
-        _flowLayout.minimumLineSpacing = 0.f;
-        _flowLayout.minimumInteritemSpacing = 0.f;
-        _flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    }
-    return _flowLayout;
+
+#pragma mark < Public Method >
+- (void)reload {
+    [self.childVcsDict enumerateKeysAndObjectsUsingBlock:^(NSNumber * _Nonnull key, UIViewController * _Nonnull obj, BOOL * _Nonnull stop) {
+        [WBPageContentView removeChildVc:obj];
+        obj = nil;
+    }];
+    self.childVcsDict = nil;
+    [self wb_commonInit];
+    [self.collectionView reloadData];
+    [self setContentOffSet:CGPointZero animated:NO];
 }
 
-- (WBCollectionView *)collectionView {
-    if (!_collectionView) {
-        _collectionView = [[WBCollectionView alloc]initWithFrame:self.bounds collectionViewLayout:self.flowLayout];
-        _collectionView.delegate = self;
-        _collectionView.dataSource = self;
-        _collectionView.backgroundColor = [UIColor whiteColor];
-        _collectionView.pagingEnabled = YES;
-        _collectionView.scrollsToTop = NO;
-        _collectionView.bounces = YES;
-        _collectionView.showsHorizontalScrollIndicator = NO;
-        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:kIdentifier];
-        if (@available(iOS 11.0,*)) {
-            _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        }
+#pragma mark < setter >
+- (void)setSelectedIndex:(NSInteger)selectedIndex {
+    if (_selectedIndex == selectedIndex) {
+        return;
     }
-    return _collectionView;
+    _selectedIndex = selectedIndex;
+    [self setContentOffSet:CGPointMake(selectedIndex * self.collectionView.bounds.size.width, 0) animated:NO];
 }
 
-- (NSMutableArray<UIViewController<WBPageChildVcDelegate> *> *)childVcs {
-    if (!_childVcs) {
-        _childVcs = @[].mutableCopy;
+- (void)setIsNeedBounce:(BOOL)isNeedBounce {
+    if (_isNeedBounce == isNeedBounce) {
+        return;
     }
-    return _childVcs;
+    _isNeedBounce = isNeedBounce;
+    self.collectionView.bounces = isNeedBounce;
+}
+
+#pragma mark < Getter >
+- (NSMutableDictionary<NSNumber *,UIViewController *> *)childVcsDict {
+    if (!_childVcsDict) {
+        _childVcsDict = @{}.mutableCopy;
+    }
+    return _childVcsDict;
 }
 
 @end
