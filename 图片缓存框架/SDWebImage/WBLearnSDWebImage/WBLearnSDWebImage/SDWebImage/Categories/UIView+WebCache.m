@@ -55,6 +55,7 @@ static char TAG_ACTIVITY_SHOW;
     return [self sd_internalSetImageWithURL:url placeholderImage:placeholder options:options operationKey:operationKey setImageBlock:setImageBlock progress:progressBlock completed:completedBlock context:nil];
 }
 
+/** < 万能基础方法 >  */
 - (void)sd_internalSetImageWithURL:(nullable NSURL *)url
                   placeholderImage:(nullable UIImage *)placeholder
                            options:(SDWebImageOptions)options
@@ -63,11 +64,15 @@ static char TAG_ACTIVITY_SHOW;
                           progress:(nullable SDWebImageDownloaderProgressBlock)progressBlock
                          completed:(nullable SDExternalCompletionBlock)completedBlock
                            context:(nullable NSDictionary<NSString *, id> *)context {
+    /** < 生成一个有效的操作密钥，如果传入了参数就用传入的，否则就用当前类的类名 >  */
     NSString *validOperationKey = operationKey ?: NSStringFromClass([self class]);
+    /** < 每次设置图片，取消图片加载操作 >  */
     [self sd_cancelImageLoadOperationWithKey:validOperationKey];
+    /** < 动态关联对象，将图片地址保存 >  */
     objc_setAssociatedObject(self, &imageURLKey, url, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
+    /** < 如果没有选择延迟加载占位图 >  */
     if (!(options & SDWebImageDelayPlaceholder)) {
+        /** < 如果调度组存在，从context取出调度组，并进入调度组 >  */
         if ([context valueForKey:SDWebImageInternalSetImageGroupKey]) {
             dispatch_group_t group = [context valueForKey:SDWebImageInternalSetImageGroupKey];
             dispatch_group_enter(group);
@@ -168,6 +173,7 @@ static char TAG_ACTIVITY_SHOW;
         }];
         [self sd_setImageLoadOperation:operation forKey:validOperationKey];
     } else {
+        /** < 图片地址不存在，错误回调 >  */
         dispatch_main_async_safe(^{
             [self sd_removeActivityIndicator];
             if (completedBlock) {
