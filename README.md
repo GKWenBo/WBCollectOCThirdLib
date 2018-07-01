@@ -30,7 +30,8 @@
 [pop](https://github.com/facebook/pop) - **19064 star**     
 [LSAnimator](https://github.com/Lision/LSAnimator) **1238 star**
 - 分段控件  
-[HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl) - **3392 star**    
+[HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl) - **3392 star**  
+- 富文本编辑    
 [ZSSRichTextEditor](https://github.com/nnhubbard/ZSSRichTextEditor) - **2891 star**
 - 弹幕  
 [HJDanmakuDemo](https://github.com/panghaijiao/HJDanmakuDemo) - **717 star**    
@@ -49,7 +50,7 @@
 - 界面布局   
 [FlexLib](https://github.com/zhenglibao/FlexLib) - **496 star**  
 [Masonry](https://github.com/SnapKit/Masonry) - **16526 star**  
-[SDAutoLayout](https://github.com/gsdios/SDAutoLayout) - **5241 star**
+[SDAutoLayout](https://github.com/gsdios/SDAutoLayout) - **5241 star**   
 [WHC_AutoLayoutKit](https://github.com/netyouli/WHC_AutoLayoutKit) - **786 star**
 - 进度指示器    
 [DACircularProgress](https://github.com/danielamitay/DACircularProgress) - **2307 star**    
@@ -130,13 +131,13 @@
 [ijkplayer](https://github.com/Bilibili/ijkplayer) - **19602 star**  
 [ZFPlayer](https://github.com/renzifeng/ZFPlayer) - **4539 star**  
 [WMPlayer](https://github.com/zhengwenming/WMPlayer) - **2397 star**   
-[TBPlayer](https://github.com/suifengqjn/TBPlayer) - **1125 star**
+[TBPlayer](https://github.com/suifengqjn/TBPlayer) - **1125 star**  
 [TTAVPlayer](https://github.com/tangdiforx/TTAVPlayer) - **118 star**
 - 占位图        
-[DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) - **10439 star**
+[DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) - **10439 star**  
+[LYEmptyView](https://github.com/dev-liyang/LYEmptyView) - **657 star**
 - C语言扩展库   
 [libextobjc](https://github.com/jspahrsummers/libextobjc) - **3936 star**   
-[LYEmptyView](https://github.com/dev-liyang/LYEmptyView) - **657 star**
 - Socket编程    
 [CocoaAsyncSocket](https://github.com/robbiehanson/CocoaAsyncSocket) - **10193 star**   
 [SocketRocket](https://github.com/facebook/SocketRocket) - **7833 star**   
@@ -149,6 +150,16 @@
 [YYKit](https://github.com/ibireme/YYKit) - **12185 star**
 - LOG工具   
 [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) - **10382 star**
+- OC与JS交互    
+[WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge) - **11017 star**
+- 输入框占位符  
+[UITextView-Placeholder](https://github.com/devxoul/UITextView-Placeholder) - **797 star**  
+[RPFloatingPlaceholders](https://github.com/iwasrobbed/RPFloatingPlaceholders) - **1115 star**  
+[SZTextView](https://github.com/glaszig/SZTextView) - **652 star**  
+- 分类  
+[JKCategories](https://github.com/shaojiankui/JKCategories) - **2770 star**
+- 图像处理  
+[GPUImage](https://github.com/BradLarson/GPUImage) - **17606 star**
 - iOS开发知识集合   
 [iOS-Tips](https://github.com/awesome-tips/iOS-Tips) - **2187 star**   
 [iOS-InterviewQuestion-collection](https://github.com/liberalisman/iOS-InterviewQuestion-collection) - **1019 star**
@@ -162,6 +173,10 @@
 [SkeletonView](https://github.com/Juanpe/SkeletonView) - **5083 star**
 - 二维码扫描    
 [EFQRCode](https://github.com/EyreFree/EFQRCode) - **2751 star**
+- 布局框架  
+[SnapKit](https://github.com/SnapKit/SnapKit) - **12978 star**  
+- 图表绘制  
+[Charts](https://github.com/danielgindi/Charts) - **18605 star**
 
 ### 四、结语
 > 上面这些三方开源库按照自己的理解分类整理了一遍，其中OC语言库居多，自己现在也是基于OC开发，Swift收集的相对较少，这些库也是自己现在所了解到的，当然还有很多优秀的三方库自己也未发现和接触，我以后会不断在这篇博客中更新优秀的三方开源库。
