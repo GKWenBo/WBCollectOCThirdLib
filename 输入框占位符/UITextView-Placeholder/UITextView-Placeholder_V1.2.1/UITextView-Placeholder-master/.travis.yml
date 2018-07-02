@@ -1,0 +1,12 @@
+language: objective-c
+osx_image: xcode9.3
+sudo: false
+
+env:
+  global:
+    - SCHEME="UITextView+Placeholder"
+    - IOS_SDK="iphonesimulator11.3"
+    - DESTINATION="OS=11.3,name=iPhone X"
+
+script:
+  - xcodebuild clean test -project "UITextView+Placeholder.xcodeproj" -scheme "$SCHEME" -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
