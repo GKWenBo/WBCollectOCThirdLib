@@ -1,0 +1,1018 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071E6DED7F56C3BFC9C9F038CC17F51F /* AXWebViewControllerActivityChrome.h in Headers */ = {isa = PBXBuildFile; fileRef = 555DF6EF46D808B459C769636C3A3322 /* AXWebViewControllerActivityChrome.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CEF0C8769662CEC14649C5FD2CBE0EB /* Aspects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A5E6337F830C1009891BB57B387ED /* Aspects-dummy.m */; };
+		142EA5A72A14024A27AE202DBDA0FDC8 /* AXWebViewControllerActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E162987537F615CEF1BC8BC1CE064F5 /* AXWebViewControllerActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16A70C14E9CEF8D6D56C34E15201EE69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */; };
+		2A2F36610CD105E2D65FA85445D235B4 /* AXPopNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = FCD731C5B4D539BCB34CD83BF7C8F436 /* AXPopNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31A712F71F7DC5F79BBDC55D515C3F26 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D4E5D25CEE8F0C6F11F488DD554FB /* NJKWebViewProgressView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F991C653658E57DDB4149AD6E9A4838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */; };
+		46C682D1E8BC66CB5093EAA25DB64836 /* AXWebViewControllerActivitySafari.h in Headers */ = {isa = PBXBuildFile; fileRef = 630E2E554B944B5A1A5699431336FBF4 /* AXWebViewControllerActivitySafari.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5058A4B63A646BB8446D362D441E2D9B /* AXWebViewControllerActivitySafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 13705F3BF27BCA7B837529D8792E89ED /* AXWebViewControllerActivitySafari.m */; };
+		54AF7A159A4FFEBB32B5909E140166A5 /* AXWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D381BA5F18EDE66AF561752D105FD893 /* AXWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6318CFF57C5697891E9B45A4868E5F8C /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B0F7395115EBBD633BDAB19705BE6C /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		872D938C08D20E781018B2B17D5A9529 /* AXWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = FC505EA470E2E564BB43DF5DF558276E /* AXWebViewControllerActivity.m */; };
+		890025BF1A4EC4DBAE2128E689E247D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5147AE3C7F8B063B02257EFF0EFD800 /* UIKit.framework */; };
+		9883A266958151EAF7D0BA49E1A0CEB7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAF4F70740F05FA34D54F1982E18E7A /* WebKit.framework */; };
+		99E15509614F327AFC7E37188C05816F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5147AE3C7F8B063B02257EFF0EFD800 /* UIKit.framework */; };
+		A1E5D406E57708CBA3851073C7680A6D /* AXNavigationBackItemInjection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DF991D59F3AD80C14B8BFB59355C43 /* AXNavigationBackItemInjection-dummy.m */; };
+		A28ECA32E687567190D2E4B8AA9D9F74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */; };
+		AC9023162F5D53252FB1F5F1C970BAAB /* AXPopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6152335F2E4B79297CD73E1A8D951F2 /* AXPopNavigationController.m */; };
+		B22C84893B847B2FE9BCD75C14D6E2D1 /* NJKWebViewProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F917DA8FE05980ADB9DE5CE793F559 /* NJKWebViewProgress-dummy.m */; };
+		B4DA66C57D6705A3024620BD755658F9 /* AXWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 969D0C6915AA9A8627084FCA738A3F10 /* AXWebViewController-dummy.m */; };
+		D4F8546A82014998880F4C0E9465055F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */; };
+		D77458A1CE4FFFD8846599C02325966B /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = E48493550806E491994C0ACCE83AAFF6 /* Aspects.m */; };
+		DD359A071BC5A1CB61A4BBE696A06BF6 /* NJKWebViewProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DAF0961F834A26D1B176853C04BFB0 /* NJKWebViewProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE166B28C318483E0EC66E605B8AD683 /* Pods-MyDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 134E17D14139510FD065E9408811156B /* Pods-MyDemo-dummy.m */; };
+		E9C5BA271DAC2CF81E6CF91A70D40243 /* AXWebViewControllerActivityChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = CF182B907696619FDCEE3BB7AA60E9EB /* AXWebViewControllerActivityChrome.m */; };
+		EC8E4A3887896ED83E8EA5DE203007C8 /* AXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A22D6449DB3D5D7584F71A3814469C /* AXWebViewController.m */; };
+		ECB0066D0E46749B335D9B1A885EAC35 /* NJKWebViewProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = B25F93268DA9006BEC62988D7694D7D4 /* NJKWebViewProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F772C43EE2AE57FAB999C657A7E0F90D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */; };
+		FFED1D3E60E5C353424B2B09C6B246D5 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E40C1D5DE14E86D1FF33434A63AC58 /* NJKWebViewProgress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		119C218FE622A78FAB41C2D04B49EF97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7C5FD310966070D9553E5B95C59641B;
+			remoteInfo = Aspects;
+		};
+		1B14CA0927B89AFE89F38947E65A614D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1023018FA32CF6E85EA756E481449987;
+			remoteInfo = NJKWebViewProgress;
+		};
+		242EF94C49842C822976F755D41F9AC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E003F621BD9FC959D0E7B2A6C861F8;
+			remoteInfo = AXWebViewController;
+		};
+		2D009CD561AC0F9DB0D3A536B6967FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1023018FA32CF6E85EA756E481449987;
+			remoteInfo = NJKWebViewProgress;
+		};
+		3F60AC183B94495EE2DFB375842D9D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA6986852A8A534ED5F5D70DB15F51C;
+			remoteInfo = AXNavigationBackItemInjection;
+		};
+		D4E503807CA566E64EBE3B56E9E24EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BA6986852A8A534ED5F5D70DB15F51C;
+			remoteInfo = AXNavigationBackItemInjection;
+		};
+		FC752D4F008EE6B72A0B76A77DEECF66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7C5FD310966070D9553E5B95C59641B;
+			remoteInfo = Aspects;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2CDABDD6423EECA35795C7FFC13C5A /* Pods-MyDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyDemo-resources.sh"; sourceTree = "<group>"; };
+		134E17D14139510FD065E9408811156B /* Pods-MyDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyDemo-dummy.m"; sourceTree = "<group>"; };
+		13705F3BF27BCA7B837529D8792E89ED /* AXWebViewControllerActivitySafari.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AXWebViewControllerActivitySafari.m; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivitySafari.m; sourceTree = "<group>"; };
+		14A22D6449DB3D5D7584F71A3814469C /* AXWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AXWebViewController.m; path = AXWebViewController/AXWebViewController/AXWebViewController.m; sourceTree = "<group>"; };
+		1FAF4F70740F05FA34D54F1982E18E7A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		29B0F7395115EBBD633BDAB19705BE6C /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		29F917DA8FE05980ADB9DE5CE793F559 /* NJKWebViewProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NJKWebViewProgress-dummy.m"; sourceTree = "<group>"; };
+		36496A8499AA2C3FB53A4EA4C3EE560E /* libPods-MyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MyDemo.a"; path = "libPods-MyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AD80D23802BFC64C2A77AFBD1ADA3A /* Pods-MyDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		50EAEB60D19CBF2F09E5245D52AA84E8 /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
+		555DF6EF46D808B459C769636C3A3322 /* AXWebViewControllerActivityChrome.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AXWebViewControllerActivityChrome.h; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivityChrome.h; sourceTree = "<group>"; };
+		571A5E6337F830C1009891BB57B387ED /* Aspects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspects-dummy.m"; sourceTree = "<group>"; };
+		5E96A583EB1E4719CC667144526B602F /* AXNavigationBackItemInjection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AXNavigationBackItemInjection.xcconfig; sourceTree = "<group>"; };
+		630E2E554B944B5A1A5699431336FBF4 /* AXWebViewControllerActivitySafari.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AXWebViewControllerActivitySafari.h; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivitySafari.h; sourceTree = "<group>"; };
+		68CDBF4F3DBA3F0FD059E8B6304995EA /* NJKWebViewProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NJKWebViewProgress-prefix.pch"; sourceTree = "<group>"; };
+		6A1F419AD3530543F4B4D05FD9DE81AA /* AXWebViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AXWebViewController.xcconfig; sourceTree = "<group>"; };
+		6C0D4E5D25CEE8F0C6F11F488DD554FB /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgressView.m; path = NJKWebViewProgress/NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		6EE3A6E1D4978D106E983408702B5E40 /* AXNavigationBackItemInjection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AXNavigationBackItemInjection-prefix.pch"; sourceTree = "<group>"; };
+		7B894FDB057FD53FB245C453A0132240 /* AXWebViewController.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = AXWebViewController.bundle; path = AXWebViewController/AXWebViewController/AXWebViewController.bundle; sourceTree = "<group>"; };
+		81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		863F009EBC689ED804CB649616E8EE28 /* Pods-MyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8C63877A26EEC0C1BB041BA785491C11 /* libAspects.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAspects.a; path = libAspects.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		957806DCFAD7EA8127DEA43F002CB372 /* AXWebViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AXWebViewController-prefix.pch"; sourceTree = "<group>"; };
+		969D0C6915AA9A8627084FCA738A3F10 /* AXWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AXWebViewController-dummy.m"; sourceTree = "<group>"; };
+		9E162987537F615CEF1BC8BC1CE064F5 /* AXWebViewControllerActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AXWebViewControllerActivity.h; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivity.h; sourceTree = "<group>"; };
+		9EBA55650EDE933D160F2149FDF2E61D /* Pods-MyDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A84EBE289FEC42C5EFCCC3806A3D2744 /* Pods-MyDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyDemo-frameworks.sh"; sourceTree = "<group>"; };
+		AD7911FFCD5B976BFC4D1289689D8DB5 /* libAXNavigationBackItemInjection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAXNavigationBackItemInjection.a; path = libAXNavigationBackItemInjection.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25F93268DA9006BEC62988D7694D7D4 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgressView.h; path = NJKWebViewProgress/NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		BA69DF9E7C541E3FF66D87EEEDA93CF3 /* libNJKWebViewProgress.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNJKWebViewProgress.a; path = libNJKWebViewProgress.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E40C1D5DE14E86D1FF33434A63AC58 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NJKWebViewProgress.m; path = NJKWebViewProgress/NJKWebViewProgress.m; sourceTree = "<group>"; };
+		CF182B907696619FDCEE3BB7AA60E9EB /* AXWebViewControllerActivityChrome.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AXWebViewControllerActivityChrome.m; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivityChrome.m; sourceTree = "<group>"; };
+		D381BA5F18EDE66AF561752D105FD893 /* AXWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AXWebViewController.h; path = AXWebViewController/AXWebViewController/AXWebViewController.h; sourceTree = "<group>"; };
+		D7DF991D59F3AD80C14B8BFB59355C43 /* AXNavigationBackItemInjection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AXNavigationBackItemInjection-dummy.m"; sourceTree = "<group>"; };
+		DF1561385B3F487998614915C90B10C6 /* libAXWebViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAXWebViewController.a; path = libAXWebViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48493550806E491994C0ACCE83AAFF6 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		E4FCE5B5362380CEB4292D9E5D26CCFD /* Aspects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.xcconfig; sourceTree = "<group>"; };
+		E6152335F2E4B79297CD73E1A8D951F2 /* AXPopNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AXPopNavigationController.m; path = AXNavigationBackItemInjection/AXNavigationBackItemInjection/AXPopNavigationController.m; sourceTree = "<group>"; };
+		EA404894A3F208F32557B150A66EED2C /* NJKWebViewProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NJKWebViewProgress.xcconfig; sourceTree = "<group>"; };
+		F2DAF0961F834A26D1B176853C04BFB0 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NJKWebViewProgress.h; path = NJKWebViewProgress/NJKWebViewProgress.h; sourceTree = "<group>"; };
+		F395369BC1E94FFD117EF1232E9A261F /* Pods-MyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F5147AE3C7F8B063B02257EFF0EFD800 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FC505EA470E2E564BB43DF5DF558276E /* AXWebViewControllerActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AXWebViewControllerActivity.m; path = AXWebViewController/AXWebViewController/AXWebViewControllerActivity/AXWebViewControllerActivity.m; sourceTree = "<group>"; };
+		FCD731C5B4D539BCB34CD83BF7C8F436 /* AXPopNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AXPopNavigationController.h; path = AXNavigationBackItemInjection/AXNavigationBackItemInjection/AXPopNavigationController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A8A3FAC60BAF2B7D10A780101EA95E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28ECA32E687567190D2E4B8AA9D9F74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC4E0607C36EBFFCF01FC7DF2D33E5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A70C14E9CEF8D6D56C34E15201EE69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC5423CE6437D946D7DA64E739F9398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F772C43EE2AE57FAB999C657A7E0F90D /* Foundation.framework in Frameworks */,
+				99E15509614F327AFC7E37188C05816F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA11FD720F6EA2DE0E64F7722F018C7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F991C653658E57DDB4149AD6E9A4838 /* Foundation.framework in Frameworks */,
+				890025BF1A4EC4DBAE2128E689E247D5 /* UIKit.framework in Frameworks */,
+				9883A266958151EAF7D0BA49E1A0CEB7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7BBE728C49110B1F0CD42AB3E4F3AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F8546A82014998880F4C0E9465055F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FFDF343B465C42F26242933972F7F1D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		316D954A90839500605B272AAE852778 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				29B0F7395115EBBD633BDAB19705BE6C /* Aspects.h */,
+				E48493550806E491994C0ACCE83AAFF6 /* Aspects.m */,
+				E11FA6B00567FEAC1822F354D337D8BF /* Support Files */,
+			);
+			name = Aspects;
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		39C48D8551C9AF420A0D55CA3D02C86F /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				B25F93268DA9006BEC62988D7694D7D4 /* NJKWebViewProgressView.h */,
+				6C0D4E5D25CEE8F0C6F11F488DD554FB /* NJKWebViewProgressView.m */,
+			);
+			name = ProgressView;
+			sourceTree = "<group>";
+		};
+		3F832EDAD8005E64848B0F579A76965E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F2DAF0961F834A26D1B176853C04BFB0 /* NJKWebViewProgress.h */,
+				C8E40C1D5DE14E86D1FF33434A63AC58 /* NJKWebViewProgress.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5A4C1DA90EDFC376AF1B955E9D691E0A /* AXWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D381BA5F18EDE66AF561752D105FD893 /* AXWebViewController.h */,
+				14A22D6449DB3D5D7584F71A3814469C /* AXWebViewController.m */,
+				9E162987537F615CEF1BC8BC1CE064F5 /* AXWebViewControllerActivity.h */,
+				FC505EA470E2E564BB43DF5DF558276E /* AXWebViewControllerActivity.m */,
+				555DF6EF46D808B459C769636C3A3322 /* AXWebViewControllerActivityChrome.h */,
+				CF182B907696619FDCEE3BB7AA60E9EB /* AXWebViewControllerActivityChrome.m */,
+				630E2E554B944B5A1A5699431336FBF4 /* AXWebViewControllerActivitySafari.h */,
+				13705F3BF27BCA7B837529D8792E89ED /* AXWebViewControllerActivitySafari.m */,
+				E478DEA01001B767FC2F60FAC3D3DCB4 /* Resources */,
+				D5027A0A2F6CD3EE9A50836AC047AACA /* Support Files */,
+			);
+			name = AXWebViewController;
+			path = AXWebViewController;
+			sourceTree = "<group>";
+		};
+		5BE03DED449D03375B0DB62339F65277 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA404894A3F208F32557B150A66EED2C /* NJKWebViewProgress.xcconfig */,
+				29F917DA8FE05980ADB9DE5CE793F559 /* NJKWebViewProgress-dummy.m */,
+				68CDBF4F3DBA3F0FD059E8B6304995EA /* NJKWebViewProgress-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NJKWebViewProgress";
+			sourceTree = "<group>";
+		};
+		628443BAAFABFF31B5689F128655CBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C63877A26EEC0C1BB041BA785491C11 /* libAspects.a */,
+				AD7911FFCD5B976BFC4D1289689D8DB5 /* libAXNavigationBackItemInjection.a */,
+				DF1561385B3F487998614915C90B10C6 /* libAXWebViewController.a */,
+				BA69DF9E7C541E3FF66D87EEEDA93CF3 /* libNJKWebViewProgress.a */,
+				36496A8499AA2C3FB53A4EA4C3EE560E /* libPods-MyDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FFDF343B465C42F26242933972F7F1D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				81607F20092CACC1394D3DCB7D6993B0 /* Foundation.framework */,
+				F5147AE3C7F8B063B02257EFF0EFD800 /* UIKit.framework */,
+				1FAF4F70740F05FA34D54F1982E18E7A /* WebKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				FA872F4A34B0A454F9581C95F1A15D74 /* Pods */,
+				628443BAAFABFF31B5689F128655CBF1 /* Products */,
+				E9C3D7A63B62E5E3A2C690B76E539DBF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		854E5D4039D39BC5E6BCEAD6BF0BCDD9 /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3F832EDAD8005E64848B0F579A76965E /* Core */,
+				39C48D8551C9AF420A0D55CA3D02C86F /* ProgressView */,
+				5BE03DED449D03375B0DB62339F65277 /* Support Files */,
+			);
+			name = NJKWebViewProgress;
+			path = NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
+		B3F8611B5CAF9E01D279DF00B60EFBD7 /* Pods-MyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9EBA55650EDE933D160F2149FDF2E61D /* Pods-MyDemo-acknowledgements.markdown */,
+				47AD80D23802BFC64C2A77AFBD1ADA3A /* Pods-MyDemo-acknowledgements.plist */,
+				134E17D14139510FD065E9408811156B /* Pods-MyDemo-dummy.m */,
+				A84EBE289FEC42C5EFCCC3806A3D2744 /* Pods-MyDemo-frameworks.sh */,
+				0E2CDABDD6423EECA35795C7FFC13C5A /* Pods-MyDemo-resources.sh */,
+				F395369BC1E94FFD117EF1232E9A261F /* Pods-MyDemo.debug.xcconfig */,
+				863F009EBC689ED804CB649616E8EE28 /* Pods-MyDemo.release.xcconfig */,
+			);
+			name = "Pods-MyDemo";
+			path = "Target Support Files/Pods-MyDemo";
+			sourceTree = "<group>";
+		};
+		D5027A0A2F6CD3EE9A50836AC047AACA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A1F419AD3530543F4B4D05FD9DE81AA /* AXWebViewController.xcconfig */,
+				969D0C6915AA9A8627084FCA738A3F10 /* AXWebViewController-dummy.m */,
+				957806DCFAD7EA8127DEA43F002CB372 /* AXWebViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AXWebViewController";
+			sourceTree = "<group>";
+		};
+		E11FA6B00567FEAC1822F354D337D8BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4FCE5B5362380CEB4292D9E5D26CCFD /* Aspects.xcconfig */,
+				571A5E6337F830C1009891BB57B387ED /* Aspects-dummy.m */,
+				50EAEB60D19CBF2F09E5245D52AA84E8 /* Aspects-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Aspects";
+			sourceTree = "<group>";
+		};
+		E478DEA01001B767FC2F60FAC3D3DCB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B894FDB057FD53FB245C453A0132240 /* AXWebViewController.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E9C3D7A63B62E5E3A2C690B76E539DBF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3F8611B5CAF9E01D279DF00B60EFBD7 /* Pods-MyDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ECE0FEA3A92CF0563B1A816202A1F3A4 /* AXNavigationBackItemInjection */ = {
+			isa = PBXGroup;
+			children = (
+				FCD731C5B4D539BCB34CD83BF7C8F436 /* AXPopNavigationController.h */,
+				E6152335F2E4B79297CD73E1A8D951F2 /* AXPopNavigationController.m */,
+				EEE00017663F01B895BB790657DCB034 /* Support Files */,
+			);
+			name = AXNavigationBackItemInjection;
+			path = AXNavigationBackItemInjection;
+			sourceTree = "<group>";
+		};
+		EEE00017663F01B895BB790657DCB034 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E96A583EB1E4719CC667144526B602F /* AXNavigationBackItemInjection.xcconfig */,
+				D7DF991D59F3AD80C14B8BFB59355C43 /* AXNavigationBackItemInjection-dummy.m */,
+				6EE3A6E1D4978D106E983408702B5E40 /* AXNavigationBackItemInjection-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AXNavigationBackItemInjection";
+			sourceTree = "<group>";
+		};
+		FA872F4A34B0A454F9581C95F1A15D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				316D954A90839500605B272AAE852778 /* Aspects */,
+				ECE0FEA3A92CF0563B1A816202A1F3A4 /* AXNavigationBackItemInjection */,
+				5A4C1DA90EDFC376AF1B955E9D691E0A /* AXWebViewController */,
+				854E5D4039D39BC5E6BCEAD6BF0BCDD9 /* NJKWebViewProgress */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0838161285D7F3F57DBEEAF1DF631472 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6318CFF57C5697891E9B45A4868E5F8C /* Aspects.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BF82E07E705C845B20405283C12B448 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2F36610CD105E2D65FA85445D235B4 /* AXPopNavigationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		346ECE2CF3D5B211888BB0F9BF80F278 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54AF7A159A4FFEBB32B5909E140166A5 /* AXWebViewController.h in Headers */,
+				142EA5A72A14024A27AE202DBDA0FDC8 /* AXWebViewControllerActivity.h in Headers */,
+				071E6DED7F56C3BFC9C9F038CC17F51F /* AXWebViewControllerActivityChrome.h in Headers */,
+				46C682D1E8BC66CB5093EAA25DB64836 /* AXWebViewControllerActivitySafari.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EC594DF1CAC5FE343ADEAE311BC2AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD359A071BC5A1CB61A4BBE696A06BF6 /* NJKWebViewProgress.h in Headers */,
+				ECB0066D0E46749B335D9B1A885EAC35 /* NJKWebViewProgressView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1023018FA32CF6E85EA756E481449987 /* NJKWebViewProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0294AF3B0E74D5800D763D001892EB78 /* Build configuration list for PBXNativeTarget "NJKWebViewProgress" */;
+			buildPhases = (
+				CF0FE1F4503F10C09AAB70CD4D535C02 /* Sources */,
+				2A8A3FAC60BAF2B7D10A780101EA95E2 /* Frameworks */,
+				B3EC594DF1CAC5FE343ADEAE311BC2AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NJKWebViewProgress;
+			productName = NJKWebViewProgress;
+			productReference = BA69DF9E7C541E3FF66D87EEEDA93CF3 /* libNJKWebViewProgress.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		517208916AEC61453ED15A93CDB0F00B /* Pods-MyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F980D43BA00CFC885A9AB058EDCC7F4 /* Build configuration list for PBXNativeTarget "Pods-MyDemo" */;
+			buildPhases = (
+				995146FE2E8F159A75E073B2B792F2A8 /* Sources */,
+				6DC4E0607C36EBFFCF01FC7DF2D33E5F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89F423D08037F7B8B962450BC09FCAF4 /* PBXTargetDependency */,
+				AD437702F25638E41A71CD408533DF39 /* PBXTargetDependency */,
+				71E7AA41043C791A2BA0FB10FA094CF1 /* PBXTargetDependency */,
+				E464E1F300CDE7E3C65A66D0E0A821C7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MyDemo";
+			productName = "Pods-MyDemo";
+			productReference = 36496A8499AA2C3FB53A4EA4C3EE560E /* libPods-MyDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8BA6986852A8A534ED5F5D70DB15F51C /* AXNavigationBackItemInjection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D5C0F8A34A222280A9D26C950432A5 /* Build configuration list for PBXNativeTarget "AXNavigationBackItemInjection" */;
+			buildPhases = (
+				C5EC0C9CAFEB2651EB89C2165950384E /* Sources */,
+				8AC5423CE6437D946D7DA64E739F9398 /* Frameworks */,
+				0BF82E07E705C845B20405283C12B448 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXNavigationBackItemInjection;
+			productName = AXNavigationBackItemInjection;
+			productReference = AD7911FFCD5B976BFC4D1289689D8DB5 /* libAXNavigationBackItemInjection.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C7C5FD310966070D9553E5B95C59641B /* Aspects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADDD598D97160FAFC23522D96D16607C /* Build configuration list for PBXNativeTarget "Aspects" */;
+			buildPhases = (
+				333DA74B4E797F48FFF01D823B85E3CC /* Sources */,
+				FF7BBE728C49110B1F0CD42AB3E4F3AB /* Frameworks */,
+				0838161285D7F3F57DBEEAF1DF631472 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aspects;
+			productName = Aspects;
+			productReference = 8C63877A26EEC0C1BB041BA785491C11 /* libAspects.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F4E003F621BD9FC959D0E7B2A6C861F8 /* AXWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811C613DC8CAF7E468502713888508AC /* Build configuration list for PBXNativeTarget "AXWebViewController" */;
+			buildPhases = (
+				67B1A49378FC3B44DAB31B4B4C4961D4 /* Sources */,
+				BA11FD720F6EA2DE0E64F7722F018C7D /* Frameworks */,
+				346ECE2CF3D5B211888BB0F9BF80F278 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				212A90BADDA5D3171E8F0F71899E45A6 /* PBXTargetDependency */,
+				5C077C291C0CE53D03C059D083C5FFE0 /* PBXTargetDependency */,
+				279B8F213D8D5674CE5FCE5B374A4A6B /* PBXTargetDependency */,
+			);
+			name = AXWebViewController;
+			productName = AXWebViewController;
+			productReference = DF1561385B3F487998614915C90B10C6 /* libAXWebViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 628443BAAFABFF31B5689F128655CBF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7C5FD310966070D9553E5B95C59641B /* Aspects */,
+				8BA6986852A8A534ED5F5D70DB15F51C /* AXNavigationBackItemInjection */,
+				F4E003F621BD9FC959D0E7B2A6C861F8 /* AXWebViewController */,
+				1023018FA32CF6E85EA756E481449987 /* NJKWebViewProgress */,
+				517208916AEC61453ED15A93CDB0F00B /* Pods-MyDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		333DA74B4E797F48FFF01D823B85E3CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CEF0C8769662CEC14649C5FD2CBE0EB /* Aspects-dummy.m in Sources */,
+				D77458A1CE4FFFD8846599C02325966B /* Aspects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B1A49378FC3B44DAB31B4B4C4961D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4DA66C57D6705A3024620BD755658F9 /* AXWebViewController-dummy.m in Sources */,
+				EC8E4A3887896ED83E8EA5DE203007C8 /* AXWebViewController.m in Sources */,
+				872D938C08D20E781018B2B17D5A9529 /* AXWebViewControllerActivity.m in Sources */,
+				E9C5BA271DAC2CF81E6CF91A70D40243 /* AXWebViewControllerActivityChrome.m in Sources */,
+				5058A4B63A646BB8446D362D441E2D9B /* AXWebViewControllerActivitySafari.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995146FE2E8F159A75E073B2B792F2A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE166B28C318483E0EC66E605B8AD683 /* Pods-MyDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5EC0C9CAFEB2651EB89C2165950384E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E5D406E57708CBA3851073C7680A6D /* AXNavigationBackItemInjection-dummy.m in Sources */,
+				AC9023162F5D53252FB1F5F1C970BAAB /* AXPopNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF0FE1F4503F10C09AAB70CD4D535C02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22C84893B847B2FE9BCD75C14D6E2D1 /* NJKWebViewProgress-dummy.m in Sources */,
+				FFED1D3E60E5C353424B2B09C6B246D5 /* NJKWebViewProgress.m in Sources */,
+				31A712F71F7DC5F79BBDC55D515C3F26 /* NJKWebViewProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		212A90BADDA5D3171E8F0F71899E45A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AXNavigationBackItemInjection;
+			target = 8BA6986852A8A534ED5F5D70DB15F51C /* AXNavigationBackItemInjection */;
+			targetProxy = D4E503807CA566E64EBE3B56E9E24EDA /* PBXContainerItemProxy */;
+		};
+		279B8F213D8D5674CE5FCE5B374A4A6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NJKWebViewProgress;
+			target = 1023018FA32CF6E85EA756E481449987 /* NJKWebViewProgress */;
+			targetProxy = 2D009CD561AC0F9DB0D3A536B6967FF0 /* PBXContainerItemProxy */;
+		};
+		5C077C291C0CE53D03C059D083C5FFE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Aspects;
+			target = C7C5FD310966070D9553E5B95C59641B /* Aspects */;
+			targetProxy = 119C218FE622A78FAB41C2D04B49EF97 /* PBXContainerItemProxy */;
+		};
+		71E7AA41043C791A2BA0FB10FA094CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Aspects;
+			target = C7C5FD310966070D9553E5B95C59641B /* Aspects */;
+			targetProxy = FC752D4F008EE6B72A0B76A77DEECF66 /* PBXContainerItemProxy */;
+		};
+		89F423D08037F7B8B962450BC09FCAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AXNavigationBackItemInjection;
+			target = 8BA6986852A8A534ED5F5D70DB15F51C /* AXNavigationBackItemInjection */;
+			targetProxy = 3F60AC183B94495EE2DFB375842D9D57 /* PBXContainerItemProxy */;
+		};
+		AD437702F25638E41A71CD408533DF39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AXWebViewController;
+			target = F4E003F621BD9FC959D0E7B2A6C861F8 /* AXWebViewController */;
+			targetProxy = 242EF94C49842C822976F755D41F9AC8 /* PBXContainerItemProxy */;
+		};
+		E464E1F300CDE7E3C65A66D0E0A821C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NJKWebViewProgress;
+			target = 1023018FA32CF6E85EA756E481449987 /* NJKWebViewProgress */;
+			targetProxy = 1B14CA0927B89AFE89F38947E65A614D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E8144EE07F5CC1AA3B5F5AF35404DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA404894A3F208F32557B150A66EED2C /* NJKWebViewProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NJKWebViewProgress/NJKWebViewProgress-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		12E1A8B026C5564AB0CC961E5B9C359D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		18FF3481294083E90604F93497C1D4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E96A583EB1E4719CC667144526B602F /* AXNavigationBackItemInjection.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AXNavigationBackItemInjection/AXNavigationBackItemInjection-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		58CBEA234003B61DB2C818079B1D4BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E96A583EB1E4719CC667144526B602F /* AXNavigationBackItemInjection.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AXNavigationBackItemInjection/AXNavigationBackItemInjection-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7C316EC1C9660FBD6475B6513DE61DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FCE5B5362380CEB4292D9E5D26CCFD /* Aspects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Aspects/Aspects-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7EAFDF4F7EE222065F0B5742FFD4D990 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1F419AD3530543F4B4D05FD9DE81AA /* AXWebViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AXWebViewController/AXWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84893E102A1A1FB8FAE0E269E0B3326A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FCE5B5362380CEB4292D9E5D26CCFD /* Aspects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Aspects/Aspects-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		963033E90E0D04976500FAE32ACCFB82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 863F009EBC689ED804CB649616E8EE28 /* Pods-MyDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC669B487771CC15045FDEA917FF3F84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1F419AD3530543F4B4D05FD9DE81AA /* AXWebViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AXWebViewController/AXWebViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B71ED7CA07AAB8BA3977F24A45E9D20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA404894A3F208F32557B150A66EED2C /* NJKWebViewProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NJKWebViewProgress/NJKWebViewProgress-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D3A9D7E6435570048A0980A67D7415ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8DFF434735252A813D823BD4CD0BD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F395369BC1E94FFD117EF1232E9A261F /* Pods-MyDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0294AF3B0E74D5800D763D001892EB78 /* Build configuration list for PBXNativeTarget "NJKWebViewProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E8144EE07F5CC1AA3B5F5AF35404DA0 /* Debug */,
+				B71ED7CA07AAB8BA3977F24A45E9D20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E1A8B026C5564AB0CC961E5B9C359D /* Debug */,
+				D3A9D7E6435570048A0980A67D7415ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F980D43BA00CFC885A9AB058EDCC7F4 /* Build configuration list for PBXNativeTarget "Pods-MyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DFF434735252A813D823BD4CD0BD62 /* Debug */,
+				963033E90E0D04976500FAE32ACCFB82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811C613DC8CAF7E468502713888508AC /* Build configuration list for PBXNativeTarget "AXWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC669B487771CC15045FDEA917FF3F84 /* Debug */,
+				7EAFDF4F7EE222065F0B5742FFD4D990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADDD598D97160FAFC23522D96D16607C /* Build configuration list for PBXNativeTarget "Aspects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84893E102A1A1FB8FAE0E269E0B3326A /* Debug */,
+				7C316EC1C9660FBD6475B6513DE61DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5D5C0F8A34A222280A9D26C950432A5 /* Build configuration list for PBXNativeTarget "AXNavigationBackItemInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58CBEA234003B61DB2C818079B1D4BE6 /* Debug */,
+				18FF3481294083E90604F93497C1D4F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

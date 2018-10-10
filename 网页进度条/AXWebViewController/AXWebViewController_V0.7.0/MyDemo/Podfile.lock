@@ -1,0 +1,25 @@
+PODS:
+  - Aspects (1.4.1)
+  - AXNavigationBackItemInjection (0.0.1)
+  - AXWebViewController (0.4.0):
+    - Aspects
+    - AXNavigationBackItemInjection
+    - NJKWebViewProgress
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+
+DEPENDENCIES:
+  - AXWebViewController
+
+SPEC CHECKSUMS:
+  Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
+  AXNavigationBackItemInjection: 0ab0742fafd9ec37e44b8767c96cbbc77ec13575
+  AXWebViewController: afb5451cefa5e594a18bc4af0d05b15a4a9a53ea
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+
+PODFILE CHECKSUM: 152b0a3e30018886ebdb963ac5534c9000987df6
+
+COCOAPODS: 1.2.0.beta.1

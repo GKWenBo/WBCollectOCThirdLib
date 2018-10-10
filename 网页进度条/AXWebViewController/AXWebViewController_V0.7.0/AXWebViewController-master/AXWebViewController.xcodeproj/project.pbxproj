@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01513BF01C28F70700CB8238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01513BEF1C28F70700CB8238 /* main.m */; };
+		01513BF31C28F70700CB8238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01513BF21C28F70700CB8238 /* AppDelegate.m */; };
+		01513BF91C28F70700CB8238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01513BF71C28F70700CB8238 /* Main.storyboard */; };
+		01513BFB1C28F70700CB8238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01513BFA1C28F70700CB8238 /* Assets.xcassets */; };
+		01513BFE1C28F70700CB8238 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01513BFC1C28F70700CB8238 /* LaunchScreen.storyboard */; };
+		01513C071C28F90000CB8238 /* AXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01513C061C28F90000CB8238 /* AXWebViewController.m */; };
+		0197B9351D3F703300AF10F9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0197B9341D3F703300AF10F9 /* WebKit.framework */; };
+		01AA4F191D4F28C2008F2A2C /* TabbarViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA4F181D4F28C2008F2A2C /* TabbarViewController1.m */; };
+		01AA4F1C1D4F28DD008F2A2C /* TabbarViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AA4F1B1D4F28DD008F2A2C /* TabbarViewController2.m */; };
+		01CDC1511C2A3C9100D9AF53 /* AXWebViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01CDC1501C2A3C9100D9AF53 /* AXWebViewController.bundle */; };
+		01CDC15D1C2A41DF00D9AF53 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CDC15C1C2A41DF00D9AF53 /* TableViewController.m */; };
+		97F6BE6D557C0BB485DDCF88 /* libPods-AXWebViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2642E682614F41BF460E7673 /* libPods-AXWebViewController.a */; };
+		DCA3C59F1FB0302F008DB632 /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C59E1FB0302F008DB632 /* FullScreenViewController.m */; };
+		DCA3C5A31FB05C9C008DB632 /* AXWebContentFrameStateList.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5A21FB05C9C008DB632 /* AXWebContentFrameStateList.m */; };
+		DCA3C5A61FB05E09008DB632 /* AXWebContentFrameState.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA3C5A51FB05E09008DB632 /* AXWebContentFrameState.m */; };
+		DCABA01B1EC5EE2A005C7D31 /* AXSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABA01A1EC5EE2A005C7D31 /* AXSecurityPolicy.m */; };
+		DCABA0231EC5FDFF005C7D31 /* AXWebViewControllerActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = DCABA01E1EC5FDFF005C7D31 /* AXWebViewControllerActivity.m */; };
+		DCCF48241E7987C9009CF38E /* Swift.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DCCF48231E7987C9009CF38E /* Swift.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		013513EA1D60B83D003BDCEA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		013513EB1D60B83D003BDCEA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		01513BEB1C28F70700CB8238 /* AXWebViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXWebViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01513BEF1C28F70700CB8238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01513BF11C28F70700CB8238 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01513BF21C28F70700CB8238 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01513BF81C28F70700CB8238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01513BFA1C28F70700CB8238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01513BFD1C28F70700CB8238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01513BFF1C28F70700CB8238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01513C051C28F90000CB8238 /* AXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXWebViewController.h; path = AXWebViewController/AXWebViewController.h; sourceTree = "<group>"; };
+		01513C061C28F90000CB8238 /* AXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXWebViewController.m; path = AXWebViewController/AXWebViewController.m; sourceTree = "<group>"; };
+		0197B9341D3F703300AF10F9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		01AA4F171D4F28C2008F2A2C /* TabbarViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController1.h; sourceTree = "<group>"; };
+		01AA4F181D4F28C2008F2A2C /* TabbarViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController1.m; sourceTree = "<group>"; };
+		01AA4F1A1D4F28DD008F2A2C /* TabbarViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarViewController2.h; sourceTree = "<group>"; };
+		01AA4F1B1D4F28DD008F2A2C /* TabbarViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController2.m; sourceTree = "<group>"; };
+		01CDC1501C2A3C9100D9AF53 /* AXWebViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AXWebViewController.bundle; path = AXWebViewController/AXWebViewController.bundle; sourceTree = "<group>"; };
+		01CDC15B1C2A41DF00D9AF53 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		01CDC15C1C2A41DF00D9AF53 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		0326F0589F0B7F449EE39607 /* Pods-AXWebViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXWebViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController.release.xcconfig"; sourceTree = "<group>"; };
+		2642E682614F41BF460E7673 /* libPods-AXWebViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXWebViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B7311EC599653BFAAF42107 /* Pods-AXWebViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXWebViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		A13CC1551E977227003AC1B2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		A13CC1561E977227003AC1B2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DCA3C59D1FB0302F008DB632 /* FullScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullScreenViewController.h; sourceTree = "<group>"; };
+		DCA3C59E1FB0302F008DB632 /* FullScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullScreenViewController.m; sourceTree = "<group>"; };
+		DCA3C5A11FB05C9C008DB632 /* AXWebContentFrameStateList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXWebContentFrameStateList.h; sourceTree = "<group>"; };
+		DCA3C5A21FB05C9C008DB632 /* AXWebContentFrameStateList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXWebContentFrameStateList.m; sourceTree = "<group>"; };
+		DCA3C5A41FB05E09008DB632 /* AXWebContentFrameState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AXWebContentFrameState.h; sourceTree = "<group>"; };
+		DCA3C5A51FB05E09008DB632 /* AXWebContentFrameState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AXWebContentFrameState.m; sourceTree = "<group>"; };
+		DCABA0191EC5EE2A005C7D31 /* AXSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSecurityPolicy.h; sourceTree = "<group>"; };
+		DCABA01A1EC5EE2A005C7D31 /* AXSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSecurityPolicy.m; sourceTree = "<group>"; };
+		DCABA01D1EC5FDFF005C7D31 /* AXWebViewControllerActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXWebViewControllerActivity.h; sourceTree = "<group>"; };
+		DCABA01E1EC5FDFF005C7D31 /* AXWebViewControllerActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXWebViewControllerActivity.m; sourceTree = "<group>"; };
+		DCCF48231E7987C9009CF38E /* Swift.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Swift.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01513BE81C28F70700CB8238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0197B9351D3F703300AF10F9 /* WebKit.framework in Frameworks */,
+				97F6BE6D557C0BB485DDCF88 /* libPods-AXWebViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01513BE21C28F70700CB8238 = {
+			isa = PBXGroup;
+			children = (
+				01513BED1C28F70700CB8238 /* AXWebViewController */,
+				01513BEC1C28F70700CB8238 /* Products */,
+				0BC220E02B437FE0466F4248 /* Pods */,
+				6757935A39C536BCAB9BA3A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01513BEC1C28F70700CB8238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01513BEB1C28F70700CB8238 /* AXWebViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01513BED1C28F70700CB8238 /* AXWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01513BF11C28F70700CB8238 /* AppDelegate.h */,
+				01513BF21C28F70700CB8238 /* AppDelegate.m */,
+				DCA3C59B1FB02FEE008DB632 /* Samples */,
+				01513C081C28F90300CB8238 /* AXWebViewController */,
+				01513BF71C28F70700CB8238 /* Main.storyboard */,
+				DCCF48231E7987C9009CF38E /* Swift.pdf */,
+				01513BFA1C28F70700CB8238 /* Assets.xcassets */,
+				01513BFC1C28F70700CB8238 /* LaunchScreen.storyboard */,
+				01513BFF1C28F70700CB8238 /* Info.plist */,
+				01513BEE1C28F70700CB8238 /* Supporting Files */,
+			);
+			path = AXWebViewController;
+			sourceTree = "<group>";
+		};
+		01513BEE1C28F70700CB8238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01513BEF1C28F70700CB8238 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01513C081C28F90300CB8238 /* AXWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				01513C051C28F90000CB8238 /* AXWebViewController.h */,
+				01513C061C28F90000CB8238 /* AXWebViewController.m */,
+				01CDC1501C2A3C9100D9AF53 /* AXWebViewController.bundle */,
+				DCA3C5A01FB05BF1008DB632 /* State */,
+				DCABA01C1EC5FDFF005C7D31 /* Activity */,
+				DCABA0181EC5EE2A005C7D31 /* Security */,
+			);
+			name = AXWebViewController;
+			sourceTree = "<group>";
+		};
+		0BC220E02B437FE0466F4248 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B7311EC599653BFAAF42107 /* Pods-AXWebViewController.debug.xcconfig */,
+				0326F0589F0B7F449EE39607 /* Pods-AXWebViewController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6757935A39C536BCAB9BA3A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0197B9341D3F703300AF10F9 /* WebKit.framework */,
+				2642E682614F41BF460E7673 /* libPods-AXWebViewController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCA3C59B1FB02FEE008DB632 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				01CDC15B1C2A41DF00D9AF53 /* TableViewController.h */,
+				01CDC15C1C2A41DF00D9AF53 /* TableViewController.m */,
+				01AA4F171D4F28C2008F2A2C /* TabbarViewController1.h */,
+				01AA4F181D4F28C2008F2A2C /* TabbarViewController1.m */,
+				01AA4F1A1D4F28DD008F2A2C /* TabbarViewController2.h */,
+				01AA4F1B1D4F28DD008F2A2C /* TabbarViewController2.m */,
+				DCA3C59C1FB0300A008DB632 /* Presentation */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		DCA3C59C1FB0300A008DB632 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3C59D1FB0302F008DB632 /* FullScreenViewController.h */,
+				DCA3C59E1FB0302F008DB632 /* FullScreenViewController.m */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		DCA3C5A01FB05BF1008DB632 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DCA3C5A41FB05E09008DB632 /* AXWebContentFrameState.h */,
+				DCA3C5A51FB05E09008DB632 /* AXWebContentFrameState.m */,
+				DCA3C5A11FB05C9C008DB632 /* AXWebContentFrameStateList.h */,
+				DCA3C5A21FB05C9C008DB632 /* AXWebContentFrameStateList.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DCABA0181EC5EE2A005C7D31 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				DCABA0191EC5EE2A005C7D31 /* AXSecurityPolicy.h */,
+				DCABA01A1EC5EE2A005C7D31 /* AXSecurityPolicy.m */,
+			);
+			name = Security;
+			path = AXWebViewController/Security;
+			sourceTree = "<group>";
+		};
+		DCABA01C1EC5FDFF005C7D31 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				DCABA01D1EC5FDFF005C7D31 /* AXWebViewControllerActivity.h */,
+				DCABA01E1EC5FDFF005C7D31 /* AXWebViewControllerActivity.m */,
+			);
+			name = Activity;
+			path = AXWebViewController/Activity;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01513BEA1C28F70700CB8238 /* AXWebViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01513C021C28F70700CB8238 /* Build configuration list for PBXNativeTarget "AXWebViewController" */;
+			buildPhases = (
+				43867203D586B50CBAAFDB18 /* [CP] Check Pods Manifest.lock */,
+				01513BE71C28F70700CB8238 /* Sources */,
+				01513BE81C28F70700CB8238 /* Frameworks */,
+				01513BE91C28F70700CB8238 /* Resources */,
+				F3182DEE5A600ABFAF07F7DC /* [CP] Embed Pods Frameworks */,
+				90CC7504393E7254ABAF393F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AXWebViewController;
+			productName = AXWebViewController;
+			productReference = 01513BEB1C28F70700CB8238 /* AXWebViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01513BE31C28F70700CB8238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = AiXing;
+				TargetAttributes = {
+					01513BEA1C28F70700CB8238 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = TKA48YVS5T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01513BE61C28F70700CB8238 /* Build configuration list for PBXProject "AXWebViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 01513BE21C28F70700CB8238;
+			productRefGroup = 01513BEC1C28F70700CB8238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01513BEA1C28F70700CB8238 /* AXWebViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01513BE91C28F70700CB8238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01CDC1511C2A3C9100D9AF53 /* AXWebViewController.bundle in Resources */,
+				01513BFE1C28F70700CB8238 /* LaunchScreen.storyboard in Resources */,
+				01513BFB1C28F70700CB8238 /* Assets.xcassets in Resources */,
+				DCCF48241E7987C9009CF38E /* Swift.pdf in Resources */,
+				01513BF91C28F70700CB8238 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43867203D586B50CBAAFDB18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90CC7504393E7254ABAF393F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3182DEE5A600ABFAF07F7DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AXWebViewController/Pods-AXWebViewController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01513BE71C28F70700CB8238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01AA4F191D4F28C2008F2A2C /* TabbarViewController1.m in Sources */,
+				01513BF31C28F70700CB8238 /* AppDelegate.m in Sources */,
+				DCA3C59F1FB0302F008DB632 /* FullScreenViewController.m in Sources */,
+				DCA3C5A61FB05E09008DB632 /* AXWebContentFrameState.m in Sources */,
+				01513C071C28F90000CB8238 /* AXWebViewController.m in Sources */,
+				DCABA0231EC5FDFF005C7D31 /* AXWebViewControllerActivity.m in Sources */,
+				01513BF01C28F70700CB8238 /* main.m in Sources */,
+				01AA4F1C1D4F28DD008F2A2C /* TabbarViewController2.m in Sources */,
+				DCA3C5A31FB05C9C008DB632 /* AXWebContentFrameStateList.m in Sources */,
+				DCABA01B1EC5EE2A005C7D31 /* AXSecurityPolicy.m in Sources */,
+				01CDC15D1C2A41DF00D9AF53 /* TableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01513BF71C28F70700CB8238 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01513BF81C28F70700CB8238 /* Base */,
+				013513EA1D60B83D003BDCEA /* zh-Hans */,
+				A13CC1551E977227003AC1B2 /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01513BFC1C28F70700CB8238 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01513BFD1C28F70700CB8238 /* Base */,
+				013513EB1D60B83D003BDCEA /* zh-Hans */,
+				A13CC1561E977227003AC1B2 /* zh-Hant */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01513C001C28F70700CB8238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01513C011C28F70700CB8238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01513C031C28F70700CB8238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7311EC599653BFAAF42107 /* Pods-AXWebViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TKA48YVS5T;
+				INFOPLIST_FILE = AXWebViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KEEPStudio.AXWebViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01513C041C28F70700CB8238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0326F0589F0B7F449EE39607 /* Pods-AXWebViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TKA48YVS5T;
+				INFOPLIST_FILE = AXWebViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KEEPStudio.AXWebViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01513BE61C28F70700CB8238 /* Build configuration list for PBXProject "AXWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01513C001C28F70700CB8238 /* Debug */,
+				01513C011C28F70700CB8238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01513C021C28F70700CB8238 /* Build configuration list for PBXNativeTarget "AXWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01513C031C28F70700CB8238 /* Debug */,
+				01513C041C28F70700CB8238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01513BE31C28F70700CB8238 /* Project object */;
+}
