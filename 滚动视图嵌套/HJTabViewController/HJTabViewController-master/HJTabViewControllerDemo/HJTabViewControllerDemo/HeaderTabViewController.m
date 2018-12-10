@@ -59,7 +59,7 @@
 }
 
 - (NSInteger)numberOfViewControllerForTabViewController:(HJTabViewController *)tabViewController {
-    return 2;
+    return 3;
 }
 
 - (UIViewController *)tabViewController:(HJTabViewController *)tabViewController viewControllerForIndex:(NSInteger)index {
@@ -78,7 +78,7 @@
 }
 
 - (CGFloat)tabHeaderBottomInsetForTabViewController:(HJTabViewController *)tabViewController {
-    return HJTabViewBarDefaultHeight + CGRectGetMaxY(self.navigationController.navigationBar.frame);
+    return HJTabViewBarDefaultHeight + CGRectGetMaxY(self.navigationController.navigationBar.frame) + UIApplication.sharedApplication.statusBarFrame.size.height;
 }
 
 - (UIEdgeInsets)containerInsetsForTabViewController:(HJTabViewController *)tabViewController {
