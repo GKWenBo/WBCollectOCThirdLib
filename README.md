@@ -162,13 +162,19 @@
   [WMPageController](https://github.com/wangmchn/WMPageController) - **2229 star**    
   [ZJScrollPageView](https://github.com/jasnig/ZJScrollPageView) - **847 star**
 
-- 数据存储  
+  VTMagic is a page container library for iOS.
+  
+  [VTMagic](https://github.com/tianzhuo112/VTMagic) - **1749 star**
+  
+- 数据存储
+  
+  A Cocoa / Objective-C wrapper around SQLite  
   [fmdb](https://github.com/ccgus/fmdb) - **12533 star**   
   [BGFMDB](https://github.com/huangzhibiao/BGFMDB) - **771 star**  
   [JKDBModel](https://github.com/Haley-Wong/JKDBModel) - **683 star**  
-  [JRDB](https://github.com/scubers/JRDB) - **480 star**  
+[JRDB](https://github.com/scubers/JRDB) - **480 star**  
   [LKDBHelper-SQLite-ORM](https://github.com/li6185377/LKDBHelper-SQLite-ORM) - **980 star**
-
+  
 - 数据转模型  
   [MJExtension](https://github.com/CoderMJLee/MJExtension) - **7667 star**   
   [YYModel](https://github.com/ibireme/YYModel) - **3589 star**  
@@ -188,6 +194,14 @@
   [SCLAlertView](https://github.com/dogo/SCLAlertView) - **3084 star**   
   [Toast](https://github.com/scalessec/Toast) - **3085 star**
 
+  UIAlertView/UIAlertController便捷调用工具
+  
+  [JXTAlertManager](https://github.com/kukumaluCN/JXTAlertManager) - **172 star**
+  
+  提醒对话框，风格和微信原生几乎零误差
+  
+  [SPAlertController](https://github.com/SPStore/SPAlertController) - **259 star**
+  
 - 图表绘制  
   [AAChartKit](https://github.com/AAChartModel/AAChartKit) - **2241 star**   
   [JHChart](https://github.com/China131/JHChart) - **508 star**  
@@ -195,12 +209,20 @@
   [DVPieChart](https://github.com/FireMou/DVPieChart) - **63 star**  
   [DVLineChart](https://github.com/FireMou/DVLineChart) - **56 star**
 
+  AxcAEKit系列拆分出来的一个贝塞尔曲线绘制工具，以科技风为主，动画为辅
+  
+  [AxcDrawPath_Tool](https://github.com/axclogo/AxcDrawPath_Tool) - **398 star**
+  
 - 图片缓存框架  
   [SDWebImage](https://github.com/rs/SDWebImage) - **22089 star**  
   [FLAnimatedImage](https://github.com/Flipboard/FLAnimatedImage) - **6691 star**     
   [iOS-WebP](https://github.com/seanooi/iOS-WebP) - **739 star**  
   [YYWebImage](https://github.com/ibireme/YYWebImage) - **3195 star**  
 
+  网络图片尺寸、高度自适应/适配 - 支持异步缓存imageSize , 支持动态刷新界面
+  
+  [XHWebImageAutoSize](https://github.com/CoderZhuXH/XHWebImageAutoSize) - **202 star**
+  
 - 图片浏览  
   [MWPhotoBrowser](https://github.com/mwaterfall/MWPhotoBrowser) - **8238 star**  
   [PYPhotoBrowser](https://github.com/ko1o/PYPhotoBrowser) - **1782 star**   
@@ -208,11 +230,33 @@
   [STPhotoBrowser](https://github.com/STShenZhaoliang/STPhotoBrowser) - **299 star**  
   [KSPhotoBrowser](https://github.com/skx926/KSPhotoBrowser) - **457 star**
 
-- 图片轮播  
+  iOS仿微信、今日头条等图片浏览器
+  
+  [GKPhotoBrowser](https://github.com/QuintGao/GKPhotoBrowser) - **471 star**
+  
+- 图片、文字轮播  
   [SDCycleScrollView](https://github.com/gsdios/SDCycleScrollView) - **4921 star**    
   [HYBLoopScrollView](https://github.com/CoderJackyHuang/HYBLoopScrollView) - **615 star**    
   [TXScrollLabelView](https://github.com/tingxins/TXScrollLabelView) - **497 star**
 
+  1、无限图片轮播功能 2、每个图片的相对偏移量，方便开发者自己封装东西 3、pageControl的几个动画，（旋转，跳跃等慢慢会增加）
+  
+  [DDGBannerScrollView](https://github.com/dudongge/DDGBannerScrollView) - **49 star**
+  
+  [SGAdvertScrollView](https://github.com/kingsic/SGAdvertScrollView) - **445 star**
+  
+  A drop-in carousel view. Most of Apps put it in their first screen.
+  
+  [PSCarouselView](https://github.com/saildog/PSCarouselView) - **149 star**
+  
+  淘宝、口碑、京东、美团、天猫等等一切滚动广告 Roll 
+  
+  [RollingNotice](https://github.com/maltsugar/RollingNotice) - **326 star**
+  
+  a simple and usefull cycle pager view ,and auto scroll banner view(轮播图) ,include pageControl for iOS,support Objective-C and swift
+  
+  [TYCyclePagerView](https://github.com/12207480/TYCyclePagerView) **1216 star**
+  
 - 图片拾取  
   [TZImagePickerController](https://github.com/banchichen/TZImagePickerController) - **5065 star**    
   [CTAssetsPickerController](https://github.com/chiunam/CTAssetsPickerController) - **2142 star**     
@@ -255,10 +299,16 @@
   [TBPlayer](https://github.com/suifengqjn/TBPlayer) - **1125 star**  
   [TTAVPlayer](https://github.com/tangdiforx/TTAVPlayer) - **118 star**
 
+  Video Player. Support cocoapods & Generate GIF & Export & Localization & Play in View(UIView || TableHeader || TableCell || CollectionCell) & Keyboard Orientation & StatusBar(Style&Hide)
+  
+  [SJVideoPlayer](https://github.com/changsanjiang/SJVideoPlayer) - **1072 star**
+  
 - 占位图        
   [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) - **10439 star**  
   [LYEmptyView](https://github.com/dev-liyang/LYEmptyView) - **657 star**
 
+  [Somo](https://github.com/OpenFeyn/Somo) - 
+  
 - C语言扩展库   
   [libextobjc](https://github.com/jspahrsummers/libextobjc) - **3936 star**   
 
@@ -281,17 +331,23 @@
 - OC与JS交互    
   [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge) - **11017 star**
 
-- 输入框占位符  
+- 输入框占位符
+  
+  一个实用的设置UITextView占位文字分类 
   [UITextView-Placeholder](https://github.com/devxoul/UITextView-Placeholder) - **797 star**  
-  [RPFloatingPlaceholders](https://github.com/iwasrobbed/RPFloatingPlaceholders) - **1115 star**  
+[RPFloatingPlaceholders](https://github.com/iwasrobbed/RPFloatingPlaceholders) - **1115 star**  
   [SZTextView](https://github.com/glaszig/SZTextView) - **652 star**  
-
+  
 - 分类  
   [JKCategories](https://github.com/shaojiankui/JKCategories) - **2770 star**
 
 - 图像处理  
   [GPUImage](https://github.com/BradLarson/GPUImage) - **17606 star**
 
+  A view controller for iOS that allows users to crop portions of UIImage objects 
+  
+  [TOCropViewController](https://github.com/TimOliver/TOCropViewController) - **3153 star**
+  
 - iOS开发知识集合   
   [iOS-Tips](https://github.com/awesome-tips/iOS-Tips) - **2187 star**   
   [iOS-InterviewQuestion-collection](https://github.com/liberalisman/iOS-InterviewQuestion-collection) - **1019 star**
@@ -369,6 +425,56 @@
   仿京东/美团电商筛选菜单 电商筛选菜单 电商通用筛选菜单
 
   [GHDropMenu](https://github.com/shabake/GHDropMenuDemo) - **424 star**
+  
+- 数据加密解密
+
+  一个用于代码混淆和字符串加密的Mac小Demo
+
+  [MJCodeObfuscation](https://github.com/CoderMJLee/MJCodeObfuscation) - **322 star**
+
+  Encrypt/Decrypt: AES. Hash: MD5, SHA(SHA1, SHA224, SHA256, SHA384, SHA512). Encode/Decode: Base64, Hex.
+
+  [CocoaSecurity](https://github.com/kelp404/CocoaSecurity) - **1040 star**
+
+  多种加密解密
+
+  [Encryptions](https://github.com/iamlay/Encryptions) - **322 star**
+
+- 索引&分组
+
+  SCIndexView provide a index view like Wechat.
+
+  [SCIndexView](https://github.com/TalkingJourney/SCIndexView) - **422 **
+
+- 网页进度条
+
+  AXWebViewController is a webViewController to browse web content inside applications. It’s a lightweight controller on iOS platform based on WKWebView (UIWebView would be the base Kit under iOS 8.0).
+
+  [AXWebViewController](https://github.com/devedbox/AXWebViewController) - **698 star**
+
+  [RxWebViewController](https://github.com/Roxasora/RxWebViewController) - **1273 star**
+
+- 响应式编程
+
+  The 2.x ReactiveCocoa Objective-C API: Streams of values over time
+
+  [ReactiveObjC](https://github.com/ReactiveCocoa/ReactiveObjC) - **2020 star**
+
+- 协程编程
+
+  coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、Javascript and Kotlin. For convenience, we added coroutine categories for some Foundation and UIKit API in cokit framework like NSFileManager, JSON, NSData, UIImage etc. We also add tuple support in coobjc.
+
+  [coobjc](https://github.com/alibaba/coobjc) - **3378 star**
+
+- 学习框架推荐
+
+  高仿微信
+
+  [TLChat](https://github.com/tbl00c) - **710 star**
+
+  VVebo剥离的TableView绘制
+
+  [VVeboTableViewDemo](https://github.com/johnil/VVeboTableViewDemo) - **2676 star**
 
 ### 三、结语
 > 上面这些三方开源库按照自己的理解分类整理了一遍，其中OC语言库居多，自己现在也是基于OC开发，Swift收集的相对较少，这些库也是自己现在所了解到的，当然还有很多优秀的三方库自己也未发现和接触，我以后会不断在这篇博客中更新优秀的三方开源库。
