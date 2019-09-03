@@ -25,6 +25,10 @@
   [MJRefresh](https://github.com/CoderMJLee/MJRefresh) - **12006 star**  
   [KafkaRefresh](https://github.com/OpenFeyn/KafkaRefresh) - **627 star**
 
+  Fully customizable pull-to-refresh control inspired by Storehouse iOS app
+  
+  [CBStoreHouseRefreshControl](https://github.com/coolbeet/CBStoreHouseRefreshControl) - **4015 star**
+
 - 弹出菜单（类似微信弹出菜单）  
   [FTPopOverMenu](https://github.com/liufengting/FTPopOverMenu) - **712 star**    
   [kxmenu](https://github.com/kolyvan/kxmenu) - **1776 star**  
@@ -175,6 +179,10 @@
 [JRDB](https://github.com/scubers/JRDB) - **480 star**  
   [LKDBHelper-SQLite-ORM](https://github.com/li6185377/LKDBHelper-SQLite-ORM) - **980 star**
   
+  An efficient, small mobile key-value storage framework developed by WeChat. Works on iOS, Android, macOS and Windows.
+  
+  [MMKV](https://github.com/Tencent/MMKV) - **8248 star**
+  
 - 数据转模型  
   [MJExtension](https://github.com/CoderMJLee/MJExtension) - **7667 star**   
   [YYModel](https://github.com/ibireme/YYModel) - **3589 star**  
@@ -201,6 +209,10 @@
   提醒对话框，风格和微信原生几乎零误差
   
   [SPAlertController](https://github.com/SPStore/SPAlertController) - **259 star**
+  
+  A light wight UI package contains local notification, progress HUD, toast, with blur effect, elegant API and themes support.
+  
+  [FTIndicator](https://github.com/liufengting/FTIndicator) - **285 star**
   
 - 图表绘制  
   [AAChartKit](https://github.com/AAChartModel/AAChartKit) - **2241 star**   
@@ -233,6 +245,10 @@
   iOS仿微信、今日头条等图片浏览器
   
   [GKPhotoBrowser](https://github.com/QuintGao/GKPhotoBrowser) - **471 star**
+  
+  iOS image browser / iOS 图片浏览器 (支持视频)
+  
+  [YBImageBrowser](https://github.com/indulgeIn/YBImageBrowser) - **1451 star**
   
 - 图片、文字轮播  
   [SDCycleScrollView](https://github.com/gsdios/SDCycleScrollView) - **4921 star**    
@@ -281,6 +297,10 @@
   [HYBNetworking](https://github.com/CoderJackyHuang/HYBNetworking) - **541 star**    
   [SJNetwork](https://github.com/knightsj/SJNetwork) - **153 star**
 
+  基于 AFNetworking 网络中间层，注重性能，设计简洁，易于拓展
+  
+  YBNetwork - **103 star**
+  
 - 网络状态监测  
   [Reachability](https://github.com/tonymillion/Reachability) - **6665 star**
 
@@ -288,10 +308,16 @@
   [TWRDownloadManager](https://github.com/chasseurmic/TWRDownloadManager) - **366 star**  
   [ZFDownload](https://github.com/renzifeng/ZFDownload) - **291 star**
 
-- 旋转木马  
+- Carousel效果  
   [iCarousel](https://github.com/nicklockwood/iCarousel) - **10628 star**  
   [NewPagedFlowView](https://github.com/PageGuo/NewPagedFlowView) - **512 star**
 
+  [HJCarouselDemo](https://github.com/panghaijiao/HJCarouselDemo) - **428 star**
+  
+  仿新浪新闻首页重力卡片式轮播
+  
+  [TXCarouselView](https://github.com/TianXin123654/TXCarouselView) - **114 star**
+  
 - 音视频    
   [ijkplayer](https://github.com/Bilibili/ijkplayer) - **19602 star**  
   [ZFPlayer](https://github.com/renzifeng/ZFPlayer) - **4539 star**  
@@ -303,11 +329,19 @@
   
   [SJVideoPlayer](https://github.com/changsanjiang/SJVideoPlayer) - **1072 star**
   
+  Automatic play video & cache video data in UITableView like Weibo and Douyin.
+  
+  [JPVideoPlayer](https://github.com/newyjp/JPVideoPlayer) - **1978 star**
+  
 - 占位图        
   [DZNEmptyDataSet](https://github.com/dzenbot/DZNEmptyDataSet) - **10439 star**  
   [LYEmptyView](https://github.com/dev-liyang/LYEmptyView) - **657 star**
 
-  [Somo](https://github.com/OpenFeyn/Somo) - 
+  Somo is a iOS Skeleton-style animation library that's simple enough,and in objective-c
+  
+  [Somo](https://github.com/OpenFeyn/Somo) - **278 star**
+  
+  [TABAnimated](https://github.com/tigerAndBull/TABAnimated) - **1425 star**
   
 - C语言扩展库   
   [libextobjc](https://github.com/jspahrsummers/libextobjc) - **3936 star**   
@@ -322,14 +356,13 @@
   [MLeaksFinder](https://github.com/Tencent/MLeaksFinder) - **3568 star**   
   [FBRetainCycleDetector](https://github.com/facebook/FBRetainCycleDetector) - **3068 star**
 
-- YYKit     
+- YYKit 
+  
+A collection of iOS components.    
   [YYKit](https://github.com/ibireme/YYKit) - **12185 star**
-
+  
 - LOG工具   
   [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) - **10382 star**
-
-- OC与JS交互    
-  [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge) - **11017 star**
 
 - 输入框占位符
   
@@ -354,7 +387,7 @@
 
 - 安全防护
 
-  一个不错的crash防护框架
+  强大的防止crash框架，不改变原代码支持KVO自释放，可以检测到dealloc时未释放的kvo，等19种crash
 
   [LSSafeProtector](https://github.com/lsmakethebest/LSSafeProtector) - **505 star**
 
@@ -362,7 +395,17 @@
 
   [JJException](https://github.com/jezzmemo/JJException) - **829 star**
 
-- [XLForm](https://github.com/xmartlabs/XLForm) - **5555 star**
+  It's a library can avoid some crash in iOS project written by Objective-C
+
+  [XXShield](https://github.com/ValiantCat/XXShield) - **612 star**
+
+  Swizzle commonly used function of Foundation container to prevent nil crash
+
+  [NSObjectSafe](https://github.com/jasenhuang/NSObjectSafe) - **416 star**
+
+- 表单
+
+  [XLForm](https://github.com/xmartlabs/XLForm) - **5555 star**
 
 - 富文本相关
 
@@ -384,7 +427,7 @@
 
   Tangram is a modular UI solution for building native page dynamically, including Tangram for Android, Tangram for iOS and even backend CMS. This project provides the sdk on iOS platform.
 
-  Tangram-[iOS](https://github.com/alibaba/Tangram-iOS) - **1551 star**
+  [Tangram-iOS](https://github.com/alibaba/Tangram-iOS) - **1551 star**
 
   An iOS ScrollView to resolve the problem of reusability in views.
 
@@ -460,6 +503,10 @@
 
   [ReactiveObjC](https://github.com/ReactiveCocoa/ReactiveObjC) - **2020 star**
 
+  EasyReact 是一个简单易用的响应式编程库。
+
+  [EasyReact](https://github.com/Meituan-Dianping/EasyReact) - **1579 star**
+
 - 协程编程
 
   coobjc provides coroutine support for Objective-C and Swift. We added await method、generator and actor model like C#、Javascript and Kotlin. For convenience, we added coroutine categories for some Foundation and UIKit API in cokit framework like NSFileManager, JSON, NSData, UIImage etc. We also add tuple support in coobjc.
@@ -475,6 +522,62 @@
   VVebo剥离的TableView绘制
 
   [VVeboTableViewDemo](https://github.com/johnil/VVeboTableViewDemo) - **2676 star**
+  
+  iOS project of collected some demos for iOS App, use Objective-C
+  
+  [iOSProject](https://github.com/NJHu/iOSProject) - **5123 star**
+  
+- 组件化开发
+
+  The mediator with no regist process to split your iOS Project into multiple project.
+
+  [CTMediator](https://github.com/casatwy/CTMediator) - **2846 star**
+
+  URL routing library for iOS with a simple block-based API
+
+  [JLRoutes](https://github.com/joeldev/JLRoutes) - **5112 star**
+
+  一个高效/灵活的 iOS URL Router
+
+  [MGJRouter](https://github.com/meili/MGJRouter) - **2029 star**
+
+- AOP
+
+  Delightful, simple library for aspect oriented programming in Objective-C and Swift
+
+  [Aspects](https://github.com/steipete/Aspects) - **7513 star**
+
+- QMUI
+
+  QMUI iOS——致力于提高项目 UI 开发效率的解决方案
+
+  [QMUI_iOS](https://github.com/Tencent/QMUI_iOS) - **4745 star**
+
+- Web网页H5
+
+  VasSonic is a lightweight and high-performance Hybrid framework developed by tencent VAS team, which is intended to speed up the first screen of websites working on Android and iOS platform.
+
+  [VasSonic](https://github.com/Tencent/VasSonic) - **10168 star**
+
+  An iOS/OSX bridge for sending messages between Obj-C and JavaScript in UIWebViews/WebViews
+
+  [WebViewJavascriptBridge](https://github.com/marcuswestin/WebViewJavascriptBridge) - **12663 star**
+
+- 贝塞尔曲线
+
+  Provides an iOS view controller allowing a user to draw their signature with their finger in a realistic style.
+
+  [UberSignature](https://github.com/uber/UberSignature) - **1040 star**
+
+- 工具
+
+  Mac上iOS开发辅助工具，快速把json/xml数据转换生成对应模型类属性，省去麻烦手动创建，提高开发效率。
+
+  [WHC_DataModelFactory](https://github.com/netyouli/WHC_DataModelFactory) - **1040 star**
+
+  📱📲iOS中获取各种设备信息🆔的方法总结(iPhone XS Max 已更新)
+
+  [iOS-getClientInfo](https://github.com/PengfeiWang666/iOS-getClientInfo) - **598 star**
 
 ### 三、结语
 > 上面这些三方开源库按照自己的理解分类整理了一遍，其中OC语言库居多，自己现在也是基于OC开发，Swift收集的相对较少，这些库也是自己现在所了解到的，当然还有很多优秀的三方库自己也未发现和接触，我以后会不断在这篇博客中更新优秀的三方开源库。
