@@ -1,9 +1,0 @@
-target 'YTKNetworkDemo' do
-    pod 'YTKNetwork', :path => '../'
-    pod 'AFNetworking', '~> 3.1'
-end
-
-target 'YTKNetworkDemoTests' do
-    pod 'YTKNetwork', :path => '../'
-end
-
